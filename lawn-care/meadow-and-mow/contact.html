@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Free quote | Meadow & Mow</title>
+  <meta name="description" content="Get a free lawn care quote from Meadow & Mow.">
+  <link rel="icon" href="assets/mark.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@700;800&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#content">Skip to content</a>
+  <div class="offer-bar">🌱 Spring special: your first mow is half price. <a href="contact.html">Claim it</a></div>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html"><img src="assets/mark.svg" alt="" width="40" height="40"><span>Meadow <em>&amp;</em> Mow</span></a>
+      <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false" aria-controls="primary-nav"><span></span><span></span><span></span></button>
+      <nav class="primary-nav" id="primary-nav">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="about.html">About us</a>
+        <a href="contact.html" aria-current="page">Contact</a>
+        <a class="button button-small" href="tel:+15550163300">Call (555) 016-3300</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="content">
+    <section class="page-hero">
+      <div class="container">
+        <span class="pill">Free quote</span>
+        <h1>Let's get you growing.</h1>
+        <p>Tell us a little about your yard and we'll text you a price within a few hours. No obligation.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container contact-grid">
+        <div>
+          <h2>Rather talk?</h2>
+          <p>Give us a call or text. Rosa answers most of the time, and she's lovely.</p>
+          <ul class="info-list">
+            <li><strong>Call or text</strong><a href="tel:+15550163300">(555) 016-3300</a></li>
+            <li><strong>Email</strong><a href="mailto:hi@example.com">hi@example.com</a></li>
+            <li><strong>Hours</strong>Mon–Sat, 8am–6pm</li>
+          </ul>
+        </div>
+        <form class="contact-card" data-contact>
+          <div class="form-grid">
+            <div class="field"><label for="name">Your name</label><input id="name" name="name" autocomplete="name" required></div>
+            <div class="field"><label for="phone">Mobile number</label><input id="phone" name="phone" type="tel" autocomplete="tel" required></div>
+            <div class="field field-wide"><label for="address">Street address</label><input id="address" name="address" autocomplete="street-address" required></div>
+            <div class="field"><label for="service">What do you need?</label>
+              <select id="service" name="service"><option>Weekly mowing</option><option>Every-other-week mowing</option><option>Feed &amp; weed</option><option>Aeration &amp; overseeding</option><option>Leaf cleanup</option><option>Not sure yet</option></select></div>
+            <div class="field"><label for="size">Yard size</label>
+              <select id="size" name="size"><option>Small (under 3,000 sq ft)</option><option>Medium (3,000–6,000 sq ft)</option><option>Large (over 6,000 sq ft)</option></select></div>
+            <div class="field field-wide"><label for="notes">Anything else?</label><textarea id="notes" name="notes" rows="4" placeholder="Gate code, pets, tricky spots..."></textarea></div>
+          </div>
+          <button class="button" type="submit">Send my quote request</button>
+          <p class="form-success" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="brand" href="index.html"><img src="assets/mark.svg" alt="" width="36" height="36"><span>Meadow <em>&amp;</em> Mow</span></a>
+        <p>Family-run lawn care for Maplewood, Brookfield, Cedar Hill, Willow Park and Oak Ridge.</p>
+      </div>
+      <div>
+        <h3>Visit</h3>
+        <ul><li><a href="services.html">Services &amp; prices</a></li><li><a href="about.html">Meet the family</a></li><li><a href="contact.html">Get a quote</a></li></ul>
+      </div>
+      <div>
+        <h3>Say hi</h3>
+        <ul><li><a href="tel:+15550163300">(555) 016-3300</a></li><li><a href="mailto:hi@example.com">hi@example.com</a></li><li>Mon–Sat, 8am–6pm</li></ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>© <span data-year></span> Meadow &amp; Mow</p>
+      <p>Theme by <a href="https://presencewave.com">Presencewave</a></p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

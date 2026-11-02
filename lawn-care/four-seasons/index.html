@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Four Seasons | Year-round lawn care plans</title>
+  <meta name="description" content="Four Seasons is a practical lawn care theme built around a seasonal treatment calendar and plan picker.">
+  <link rel="icon" href="assets/mark.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#content">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top"><img src="assets/mark.svg" alt="" width="36" height="36">Four Seasons <span>Lawn</span></a>
+      <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false" aria-controls="primary-nav"><span></span><span></span><span></span></button>
+      <nav class="primary-nav" id="primary-nav">
+        <a href="#calendar">Your year</a>
+        <a href="#plans">Plans</a>
+        <a href="#included">What's included</a>
+        <a href="#faq">FAQ</a>
+        <a class="button button-small" href="#plans">Choose a plan</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="content">
+    <section class="hero" id="top">
+      <div class="container hero-grid">
+        <div>
+          <p class="eyebrow">One plan · Every season · One price</p>
+          <h1>The right care for your lawn, <span>at the right time.</span></h1>
+          <p class="lead">Lawns need different things in spring, summer, fall and winter. Our yearly plans schedule every treatment for you, so your grass is never late for anything.</p>
+          <div class="hero-actions">
+            <a class="button" href="#plans">See plans and prices</a>
+            <a class="button button-outline" href="#calendar">How the year works</a>
+          </div>
+        </div>
+        <div class="season-wheel" aria-hidden="true">
+          <div class="quarter q-spring"><strong>Spring</strong><span>Wake up</span></div>
+          <div class="quarter q-summer"><strong>Summer</strong><span>Protect</span></div>
+          <div class="quarter q-winter"><strong>Winter</strong><span>Rest</span></div>
+          <div class="quarter q-fall"><strong>Fall</strong><span>Recover</span></div>
+          <div class="wheel-center">12<small>visits a year</small></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section calendar" id="calendar">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Your lawn's year</p>
+          <h2>What we do, and when.</h2>
+          <p>Pick a season to see every visit we schedule for it.</p>
+        </div>
+        <div class="tabs" role="tablist" aria-label="Seasons">
+          <button class="tab" role="tab" id="tab-spring" aria-controls="panel-spring" aria-selected="true" data-season="spring">Spring</button>
+          <button class="tab" role="tab" id="tab-summer" aria-controls="panel-summer" aria-selected="false" tabindex="-1" data-season="summer">Summer</button>
+          <button class="tab" role="tab" id="tab-fall" aria-controls="panel-fall" aria-selected="false" tabindex="-1" data-season="fall">Fall</button>
+          <button class="tab" role="tab" id="tab-winter" aria-controls="panel-winter" aria-selected="false" tabindex="-1" data-season="winter">Winter</button>
+        </div>
+        <div class="panel spring" role="tabpanel" id="panel-spring" aria-labelledby="tab-spring">
+          <div class="visit"><span class="month">Mar</span><h3>Cleanup &amp; first feed</h3><p>Rake out dead grass and winter debris, then a slow-release feed to green up.</p></div>
+          <div class="visit"><span class="month">Apr</span><h3>Crabgrass prevention</h3><p>A pre-emergent barrier stops crabgrass before it can sprout.</p></div>
+          <div class="visit"><span class="month">May</span><h3>Weed control</h3><p>Spot treatment for dandelions and clover, plus a mowing height check.</p></div>
+        </div>
+        <div class="panel summer" role="tabpanel" id="panel-summer" aria-labelledby="tab-summer" hidden>
+          <div class="visit"><span class="month">Jun</span><h3>Summer feed</h3><p>A gentle, heat-safe feed that keeps grass strong without forcing growth.</p></div>
+          <div class="visit"><span class="month">Jul</span><h3>Grub protection</h3><p>Preventive grub control before beetles lay eggs in your lawn.</p></div>
+          <div class="visit"><span class="month">Aug</span><h3>Drought check</h3><p>Watering advice, insect check and spot treatment for summer weeds.</p></div>
+        </div>
+        <div class="panel fall" role="tabpanel" id="panel-fall" aria-labelledby="tab-fall" hidden>
+          <div class="visit"><span class="month">Sep</span><h3>Aeration &amp; overseeding</h3><p>Core aeration and fresh seed while the soil is warm and the air is cool.</p></div>
+          <div class="visit"><span class="month">Oct</span><h3>Fall feed</h3><p>The most important feed of the year, building roots for next spring.</p></div>
+          <div class="visit"><span class="month">Nov</span><h3>Leaf cleanup</h3><p>Leaves cleared and hauled away so the lawn doesn't smother over winter.</p></div>
+        </div>
+        <div class="panel winter" role="tabpanel" id="panel-winter" aria-labelledby="tab-winter" hidden>
+          <div class="visit"><span class="month">Dec</span><h3>Winterizer</h3><p>A final potassium-rich feed that helps grass survive frost and snow.</p></div>
+          <div class="visit"><span class="month">Jan</span><h3>Lawn report</h3><p>Your year in photos, a soil test result and next year's plan.</p></div>
+          <div class="visit"><span class="month">Feb</span><h3>Equipment &amp; planning</h3><p>We service our mowers and book your spring visits before the rush.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section plans" id="plans">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Plans</p>
+          <h2>Choose your plan.</h2>
+          <p>Prices for a lawn up to 5,000 sq ft. Pay monthly, or yearly and get one month free.</p>
+        </div>
+        <div class="billing-toggle" role="radiogroup" aria-label="Billing">
+          <label><input type="radio" name="billing" value="monthly" checked><span>Monthly</span></label>
+          <label><input type="radio" name="billing" value="yearly"><span>Yearly <em>1 month free</em></span></label>
+        </div>
+        <div class="plan-grid">
+          <article class="plan">
+            <h3>Essentials</h3>
+            <p class="plan-desc">The six treatments every lawn needs.</p>
+            <p class="plan-price"><strong data-monthly="39" data-yearly="429">$39</strong><span data-period>/ month</span></p>
+            <ul><li>6 feeding &amp; weed visits</li><li>Crabgrass prevention</li><li>Visit reports by text</li></ul>
+            <a class="button button-outline-dark button-wide" href="#start" data-plan="Essentials">Choose Essentials</a>
+          </article>
+          <article class="plan popular">
+            <span class="badge">Most popular</span>
+            <h3>Complete</h3>
+            <p class="plan-desc">Everything in Essentials, plus the fall renovation.</p>
+            <p class="plan-price"><strong data-monthly="59" data-yearly="649">$59</strong><span data-period>/ month</span></p>
+            <ul><li>All 12 seasonal visits</li><li>Aeration &amp; overseeding</li><li>Grub protection</li><li>Fall leaf cleanup</li></ul>
+            <a class="button button-wide" href="#start" data-plan="Complete">Choose Complete</a>
+          </article>
+          <article class="plan">
+            <h3>Complete + Mowing</h3>
+            <p class="plan-desc">Complete, plus weekly mowing from April to October.</p>
+            <p class="plan-price"><strong data-monthly="189" data-yearly="2079">$189</strong><span data-period>/ month</span></p>
+            <ul><li>Everything in Complete</li><li>30 weekly mows</li><li>Edging &amp; blowing</li><li>Priority rain rescheduling</li></ul>
+            <a class="button button-outline-dark button-wide" href="#start" data-plan="Complete + Mowing">Choose Complete + Mowing</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section included" id="included">
+      <div class="container included-grid">
+        <div>
+          <p class="eyebrow">Every plan includes</p>
+          <h2>No surprises. Ever.</h2>
+        </div>
+        <ul class="included-list">
+          <li><strong>Free re-treatments</strong>If weeds come back between visits, we return at no charge.</li>
+          <li><strong>Text-ahead visits</strong>A message the day before and a photo report after.</li>
+          <li><strong>Pet-safe products</strong>Clear advice on when kids and pets can go back on the lawn.</li>
+          <li><strong>Cancel any time</strong>No contracts. Pause or cancel from a link in any text.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section start" id="start">
+      <div class="container start-grid">
+        <div>
+          <p class="eyebrow">Get started</p>
+          <h2>Start your lawn's year.</h2>
+          <p>We'll measure your lawn from satellite images and confirm your price before the first visit.</p>
+        </div>
+        <form class="start-form" data-start>
+          <div class="field"><label for="s-plan">Plan</label>
+            <select id="s-plan" name="plan"><option>Essentials</option><option selected>Complete</option><option>Complete + Mowing</option></select></div>
+          <div class="field"><label for="s-address">Your address</label><input id="s-address" name="address" autocomplete="street-address" required></div>
+          <div class="field-row">
+            <div class="field"><label for="s-name">Name</label><input id="s-name" name="name" autocomplete="name" required></div>
+            <div class="field"><label for="s-phone">Mobile</label><input id="s-phone" name="phone" type="tel" autocomplete="tel" required></div>
+          </div>
+          <button class="button button-wide" type="submit">Start my plan</button>
+          <p class="form-success" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+    <section class="section faq" id="faq">
+      <div class="container narrow">
+        <div class="section-head center">
+          <p class="eyebrow">FAQ</p>
+          <h2>Questions, answered.</h2>
+        </div>
+        <details open><summary>What if my lawn is bigger than 5,000 sq ft?</summary><p>We price larger lawns in steps of 1,000 sq ft. You'll see the exact price before your first visit.</p></details>
+        <details><summary>Can I start in the middle of the year?</summary><p>Yes. We start with whatever your lawn needs this season and pick up the calendar from there.</p></details>
+        <details><summary>Do you mow on the Essentials and Complete plans?</summary><p>No, those plans are treatments only. Choose Complete + Mowing if you want us to mow too.</p></details>
+        <details><summary>How do I pay?</summary><p>By card, monthly or yearly. You'll get a receipt by email after every payment.</p></details>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a class="brand" href="#top"><img src="assets/mark.svg" alt="" width="30" height="30">Four Seasons <span>Lawn</span></a>
+      <p><a href="tel:+15550171100">(555) 017-1100</a> · <a href="mailto:care@example.com">care@example.com</a></p>
+      <p>© <span data-year></span> Four Seasons Lawn · Theme by <a href="https://presencewave.com">Presencewave</a></p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
