@@ -17,14 +17,21 @@ jobs:
         with:
           ref: ${{ github.event.release.tag_name }}
 
-      - name: Package cleaning service themes
+      # Every theme in every industry folder becomes <industry>-<theme>.zip. The cleaning themes
+      # are also published under their original <theme>.zip names, which older links use.
+      - name: Package themes
         run: |
           mkdir -p dist
-          for theme in afterglow citrus-and-co gridline-clean noir-and-neat sunshine-spark; do
-            cd cleaning-services
-            zip -qr "../dist/${theme}.zip" "$theme"
-            cd ..
+          for index in */*/index.html; do
+            theme_dir="$(dirname "$index")"
+            industry="$(dirname "$theme_dir")"
+            theme="$(basename "$theme_dir")"
+            (cd "$industry" && zip -qr "../dist/${industry}-${theme}.zip" "$theme")
+            if [ "$industry" = "cleaning-services" ]; then
+              cp "dist/${industry}-${theme}.zip" "dist/${theme}.zip"
+            fi
           done
+          ls dist
 
       - name: Upload release assets
         env:
