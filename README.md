@@ -26,6 +26,18 @@ Themes for lawn care, mowing and grounds maintenance businesses. [Browse the col
 | Evergreen Estate | Editorial, high-end landing page with a before/after reveal | [lawn-care-evergreen-estate.zip](https://github.com/JulioLabs/presencewave-themes/releases/latest/download/lawn-care-evergreen-estate.zip) |
 | Four Seasons | Practical landing page built around yearly lawn care plans | [lawn-care-four-seasons.zip](https://github.com/JulioLabs/presencewave-themes/releases/latest/download/lawn-care-four-seasons.zip) |
 
+## Group tours
+
+Themes for tour organizers who run group vacations, escorted tours and custom group trips. [Browse the collection](group-tours/)
+
+| Theme | Style | Download |
+|---|---|---|
+| Getaway Club | Bright, social landing page with a departure calendar and seats-left badges | [group-tours-getaway-club.zip](https://github.com/JulioLabs/presencewave-themes/releases/latest/download/group-tours-getaway-club.zip) |
+| Basecamp | Rugged landing page for hiking and adventure trips with a live trip finder | [group-tours-basecamp.zip](https://github.com/JulioLabs/presencewave-themes/releases/latest/download/group-tours-basecamp.zip) |
+| Itinerary | Editorial multi-page theme with a day-by-day itinerary and a deposit form | [group-tours-itinerary.zip](https://github.com/JulioLabs/presencewave-themes/releases/latest/download/group-tours-itinerary.zip) |
+| Private Groups | Practical multi-page theme for custom group trips with a quote builder | [group-tours-private-groups.zip](https://github.com/JulioLabs/presencewave-themes/releases/latest/download/group-tours-private-groups.zip) |
+| Grand Tour | Dark, elegant landing page for rail journeys with a side-by-side comparison | [group-tours-grand-tour.zip](https://github.com/JulioLabs/presencewave-themes/releases/latest/download/group-tours-grand-tour.zip) |
+
 ## Download links
 
 Each theme is attached to the [latest release](https://github.com/JulioLabs/presencewave-themes/releases/latest) as `<industry>-<theme>.zip`, for example `lawn-care-fairway.zip`. The cleaning themes also keep their original names (`afterglow.zip` and so on), so older links keep working.

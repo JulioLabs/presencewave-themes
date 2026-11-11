@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Basecamp | Small-group hiking and adventure trips</title>
+  <meta name="description" content="Basecamp is a rugged group adventure theme with a live trip finder by region, month and activity level.">
+  <link rel="icon" href="assets/mark.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#content">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top"><img src="assets/mark.svg" alt="" width="36" height="36"><span>BASECAMP</span></a>
+      <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false" aria-controls="primary-nav"><span></span><span></span></button>
+      <nav class="primary-nav" id="primary-nav">
+        <a href="#finder">Find a trip</a>
+        <a href="#levels">Activity levels</a>
+        <a href="#guides">Guides</a>
+        <a href="#gear">What to bring</a>
+        <a class="button button-small" href="#enquire">Ask a guide</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="content">
+    <section class="hero" id="top">
+      <svg class="topo" viewBox="0 0 1200 600" preserveAspectRatio="none" aria-hidden="true">
+        <g fill="none" stroke="currentColor" stroke-width="1.4">
+          <path d="M-50 420 C150 360 260 470 430 400 S760 300 900 360 1150 420 1250 380"/>
+          <path d="M-50 460 C170 400 280 510 450 440 S770 340 920 400 1160 460 1250 420"/>
+          <path d="M-50 380 C130 320 240 430 410 360 S750 260 880 320 1140 380 1250 340"/>
+          <path d="M-50 340 C120 280 230 390 400 320 S740 220 870 280 1130 340 1250 300"/>
+          <path d="M600 180 C660 140 760 150 790 200 S720 280 650 260 560 220 600 180Z"/>
+          <path d="M620 190 C665 160 740 170 760 205 S710 255 660 245 590 215 620 190Z"/>
+          <path d="M640 200 C670 182 720 188 732 208 S700 234 668 230 625 215 640 200Z"/>
+        </g>
+      </svg>
+      <div class="container hero-inner">
+        <p class="eyebrow">Guided small-group adventures · max 12 hikers</p>
+        <h1>Go further.<br>Carry less.</h1>
+        <p class="lead">Multi-day hikes and paddles with certified guides, camp cooks and a support van for your bags. You bring the legs; we bring everything else.</p>
+        <div class="hero-actions">
+          <a class="button" href="#finder">Find my trip</a>
+          <a class="button button-outline" href="#levels">Which level am I?</a>
+        </div>
+        <dl class="hero-facts">
+          <div><dt>32</dt><dd>trips on 4 continents</dd></div>
+          <div><dt>1:6</dt><dd>guide to hiker ratio</dd></div>
+          <div><dt>Since 2009</dt><dd>without a lost hiker</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="finder" id="finder">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Trip finder</p>
+          <h2>Where, when and how hard</h2>
+        </div>
+        <form class="filters" data-filters>
+          <label>Region
+            <select name="region">
+              <option value="">Anywhere</option>
+              <option>US West</option>
+              <option>Europe</option>
+              <option>South America</option>
+              <option>Asia</option>
+            </select>
+          </label>
+          <label>Month
+            <select name="month">
+              <option value="">Any month</option>
+              <option>Jun</option><option>Jul</option><option>Aug</option><option>Sep</option><option>Oct</option>
+            </select>
+          </label>
+          <fieldset>
+            <legend>Activity level</legend>
+            <div class="level-pills">
+              <label class="pill"><input type="checkbox" name="level" value="1" checked><span>1 Easy</span></label>
+              <label class="pill"><input type="checkbox" name="level" value="2" checked><span>2 Moderate</span></label>
+              <label class="pill"><input type="checkbox" name="level" value="3" checked><span>3 Challenging</span></label>
+            </div>
+          </fieldset>
+        </form>
+        <p class="result-count" data-count aria-live="polite"></p>
+        <div class="trip-grid" data-trips></div>
+      </div>
+    </section>
+
+    <section class="levels" id="levels">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Activity levels</p>
+          <h2>Honest grading, so nobody's left behind</h2>
+        </div>
+        <div class="level-grid">
+          <article><span class="level-badge">1</span><h3>Easy</h3><p>3–5 miles a day on good trails, little climbing. If you walk the dog for an hour, you're ready.</p></article>
+          <article><span class="level-badge">2</span><h3>Moderate</h3><p>6–9 miles and up to 2,000 ft of climbing a day. Regular hikers and gym-goers enjoy these most.</p></article>
+          <article><span class="level-badge">3</span><h3>Challenging</h3><p>10+ miles, steep ground and altitude. For people who hike most weekends and want a real summit.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="guides" id="guides">
+      <div class="container guides-grid">
+        <div>
+          <p class="eyebrow">Your guides</p>
+          <h2>Wilderness first responders, every one</h2>
+          <p>Our guides live where they lead. They know which spring is running, where the wildflowers are this week, and when to turn around.</p>
+          <ul class="ticks">
+            <li>Wilderness First Responder certified</li>
+            <li>Two guides on every departure</li>
+            <li>Satellite messenger on every trail</li>
+          </ul>
+        </div>
+        <div class="guide-cards">
+          <figure><div class="avatar" aria-hidden="true">MR</div><figcaption><strong>Maya Ruiz</strong><span>Lead guide, Sierra Nevada</span></figcaption></figure>
+          <figure><div class="avatar" aria-hidden="true">TK</div><figcaption><strong>Tom Kessler</strong><span>Dolomites and Alps</span></figcaption></figure>
+          <figure><div class="avatar" aria-hidden="true">AS</div><figcaption><strong>Ana Souza</strong><span>Patagonia</span></figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="gear" id="gear">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">What to bring</p>
+          <h2>Less than you think</h2>
+        </div>
+        <div class="gear-grid">
+          <div><h3>We provide</h3><ul><li>Tents, sleeping pads and camp kitchen</li><li>All meals on trail</li><li>Bag transfers between camps</li><li>Permits and park fees</li></ul></div>
+          <div><h3>You bring</h3><ul><li>Broken-in hiking boots</li><li>A daypack and water bottles</li><li>Layers and a rain shell</li><li>A sleeping bag (or rent ours)</li></ul></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="enquire" id="enquire">
+      <div class="container enquire-grid">
+        <div>
+          <p class="eyebrow">Ask a guide</p>
+          <h2>Not sure it's for you? Ask the person who leads it.</h2>
+          <p>Tell us your trip and your experience. A guide replies within a day with an honest answer, even if it's "try a level 1 first".</p>
+        </div>
+        <form class="enquire-form" data-enquire>
+          <label>Trip <select name="trip" data-trip-select></select></label>
+          <label>How much do you hike?
+            <select name="experience">
+              <option>A few times a year</option>
+              <option>Most months</option>
+              <option>Most weekends</option>
+            </select>
+          </label>
+          <label>Name <input name="name" autocomplete="name" required></label>
+          <label>Email <input type="email" name="email" autocomplete="email" required></label>
+          <label>Your question <textarea name="question" rows="3"></textarea></label>
+          <button class="button button-wide" type="submit">Send to a guide</button>
+          <p class="form-success" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="brand brand-light" href="#top"><img src="assets/mark.svg" alt="" width="32" height="32"><span>BASECAMP</span></a>
+        <p>Guided small-group hiking and paddling trips.</p>
+      </div>
+      <div><h3>Trip desk</h3><p><a href="tel:+15550127700">(555) 012-7700</a><br><a href="mailto:hello@example.com">hello@example.com</a></p></div>
+      <div><h3>Office</h3><p>Bozeman, Montana<br>Mon–Fri, 8am–5pm MT</p></div>
+    </div>
+    <div class="container footer-bottom">
+      <p>© <span data-year></span> Basecamp Adventures</p>
+      <p>Theme by <a href="https://presencewave.com">Presencewave</a></p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
