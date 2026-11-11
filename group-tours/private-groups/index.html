@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Private Groups | Custom group trips for schools, clubs and companies</title>
+  <meta name="description" content="Private Groups is a practical multi-page theme for custom group tour operators, with a group trip quote builder.">
+  <link rel="icon" href="assets/mark.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#content">Skip to content</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html"><img src="assets/mark.svg" alt="" width="36" height="36"><span>Private<b>Groups</b></span></a>
+      <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false" aria-controls="primary-nav"><span></span><span></span></button>
+      <nav class="primary-nav" id="primary-nav">
+        <a href="how-it-works.html">How it works</a>
+        <a href="trip-ideas.html">Trip ideas</a>
+        <a href="index.html#quote">Pricing</a>
+        <a href="contact.html">Contact</a>
+        <a class="button button-small" href="index.html#quote">Get a group quote</a>
+      </nav>
+    </div>
+  </header>
+  <main id="content">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <p class="eyebrow">Custom group travel since 1998</p>
+          <h1>Your group. Your dates. <span>One planner.</span></h1>
+          <p class="lead">From a 12-person book club to an 80-student band trip, we build the itinerary around your group and handle every booking, so the organizer gets to enjoy the trip too.</p>
+          <div class="hero-actions"><a class="button" href="#quote">Get a group quote</a><a class="button button-light" href="how-it-works.html">How it works</a></div>
+        </div>
+        <div class="hero-panel">
+          <p class="panel-title">Who we plan for</p>
+          <ul class="audience">
+            <li><span class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 9l10-5 10 5-10 5z"/><path d="M6 11v5c3 2 9 2 12 0v-5" fill="none" stroke="currentColor" stroke-width="2"/></svg></span><div><strong>Schools &amp; universities</strong><small>Educational tours, band and sports trips</small></div></li>
+            <li><span class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M11 2h2v3h3v2h-3v2l6 4v9h-5v-5h-4v5H5v-9l6-4V7H8V5h3z"/></svg></span><div><strong>Churches &amp; faith groups</strong><small>Pilgrimages and heritage journeys</small></div></li>
+            <li><span class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 22V3h11v6h5v13zM7 6v2h2V6zm4 0v2h2V6zM7 10v2h2v-2zm4 0v2h2v-2zm6 2v2h2v-2zM7 14v2h2v-2zm4 0v2h2v-2zm6 2v2h2v-2z"/></svg></span><div><strong>Companies</strong><small>Incentive trips and offsites</small></div></li>
+            <li><span class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/><path d="M15.5 8.5l-2 5-5 2 2-5z"/></svg></span><div><strong>Clubs &amp; alumni</strong><small>Garden, wine, history and alumni tours</small></div></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="trust">
+      <div class="container trust-grid">
+        <div><strong>1,900+</strong><span>group trips planned</span></div>
+        <div><strong>96%</strong><span>of organizers rebook</span></div>
+        <div><strong>24/7</strong><span>on-trip support line</span></div>
+        <div><strong>$0</strong><span>planning fee</span></div>
+      </div>
+    </section>
+    <section class="quote" id="quote">
+      <div class="container quote-grid">
+        <div>
+          <p class="eyebrow">Group quote builder</p>
+          <h2>Price your trip in a minute</h2>
+          <p>Move the sliders for a per-person estimate. It includes hotels, transport, guides and most meals. A planner turns it into a written proposal within two working days.</p>
+          <ul class="ticks"><li>Free place for every 15 paying travelers</li><li>Fixed price once you sign, no surcharges</li><li>Deposits from $150 per person</li></ul>
+        </div>
+        <form class="quote-form" data-quote>
+          <label>Trip type
+            <select name="type">
+              <option value="city">City and culture</option>
+              <option value="nature">National parks and nature</option>
+              <option value="europe">Europe highlights</option>
+              <option value="faith">Faith and heritage</option>
+            </select>
+          </label>
+          <label>Group size <output name="sizeLabel">30 travelers</output>
+            <input type="range" name="size" min="10" max="80" step="1" value="30">
+          </label>
+          <label>Nights <output name="nightsLabel">5 nights</output>
+            <input type="range" name="nights" min="2" max="12" step="1" value="5">
+          </label>
+          <fieldset>
+            <legend>Comfort level</legend>
+            <div class="segmented">
+              <label><input type="radio" name="comfort" value="0.8"><span>Value</span></label>
+              <label><input type="radio" name="comfort" value="1" checked><span>Standard</span></label>
+              <label><input type="radio" name="comfort" value="1.35"><span>Premium</span></label>
+            </div>
+          </fieldset>
+          <div class="estimate">
+            <span>Estimated per person</span>
+            <strong data-estimate>$1,180 – $1,320</strong>
+            <small data-free></small>
+          </div>
+          <label>Organization <input name="org" autocomplete="organization" required></label>
+          <label>Your email <input type="email" name="email" autocomplete="email" required></label>
+          <button class="button button-wide" type="submit">Request my proposal</button>
+          <p class="form-success" role="status"></p>
+        </form>
+      </div>
+    </section>
+    <section class="testimonials">
+      <div class="container">
+        <div class="section-head"><p class="eyebrow">From organizers</p><h2>The person in charge gets a vacation too</h2></div>
+        <div class="testimonial-grid">
+          <figure><blockquote>Fifty-two eighth graders, three cities, zero lost students. The planner answered my texts at 11pm.</blockquote><figcaption>Dana M., middle school teacher</figcaption></figure>
+          <figure><blockquote>Our congregation's Holy Land pilgrimage was organized down to the last bus seat. We've booked Italy next.</blockquote><figcaption>Rev. Michael O., parish pastor</figcaption></figure>
+          <figure><blockquote>The incentive trip to Lisbon was the best-rated thing our sales team did all year.</blockquote><figcaption>Sara L., VP Sales</figcaption></figure>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="brand brand-light" href="index.html"><img src="assets/mark.svg" alt="" width="32" height="32"><span>Private<b>Groups</b></span></a>
+        <p>Custom group trips for schools, clubs, congregations and companies.</p>
+      </div>
+      <div><h3>Group desk</h3><p><a href="tel:+15550154400">(555) 015-4400</a><br><a href="mailto:groups@example.com">groups@example.com</a></p></div>
+      <div><h3>Protected</h3><p>Bonded tour operator<br>Member of a national travel association</p></div>
+    </div>
+    <div class="container footer-bottom">
+      <p>© <span data-year></span> Private Groups Travel</p>
+      <p>Theme by <a href="https://presencewave.com">Presencewave</a></p>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>

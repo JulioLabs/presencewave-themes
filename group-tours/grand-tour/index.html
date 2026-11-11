@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Grand Tour | Slow rail journeys for small groups</title>
+  <meta name="description" content="Grand Tour is a dark, elegant group travel theme for slow rail and luxury journeys, with a side-by-side journey comparison and a brochure request.">
+  <link rel="icon" href="assets/mark.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#content">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top"><img src="assets/mark.svg" alt="" width="36" height="36"><span>The Grand Tour</span></a>
+      <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false" aria-controls="primary-nav"><span></span><span></span></button>
+      <nav class="primary-nav" id="primary-nav">
+        <a href="#journeys">Journeys</a>
+        <a href="#compare">Compare</a>
+        <a href="#onboard">On board</a>
+        <a href="#brochure">Brochure</a>
+        <a class="button button-small" href="#brochure">Request the brochure</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="content">
+    <section class="hero" id="top">
+      <svg class="rails" viewBox="0 0 1200 300" preserveAspectRatio="none" aria-hidden="true">
+        <path d="M0 260 C300 200 500 120 1200 100" fill="none" stroke="currentColor" stroke-width="2"/>
+        <path d="M0 280 C300 220 520 140 1200 120" fill="none" stroke="currentColor" stroke-width="2"/>
+        <g stroke="currentColor" stroke-width="1.4" opacity="0.6">
+          <path d="M80 248 L84 268"/><path d="M180 228 L186 250"/><path d="M280 208 L288 230"/><path d="M380 186 L390 208"/><path d="M480 164 L490 186"/><path d="M590 146 L600 168"/><path d="M700 132 L710 154"/><path d="M820 122 L828 144"/><path d="M940 114 L946 136"/><path d="M1060 106 L1064 128"/>
+        </g>
+      </svg>
+      <div class="container hero-inner">
+        <p class="eyebrow">Escorted rail journeys · 16 guests at most</p>
+        <h1>The journey <em>is</em> the destination.</h1>
+        <p class="lead">Private carriages, grand hotels and long lunches through Europe's most beautiful landscapes, with a tour manager who has travelled every mile before you.</p>
+        <div class="hero-actions">
+          <a class="button" href="#journeys">Discover the journeys</a>
+          <a class="button button-line" href="#brochure">Request the brochure</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="journeys" id="journeys">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">The collection</p>
+          <h2>Four journeys, chosen slowly</h2>
+        </div>
+        <div class="journey-list">
+          <article class="journey"><span class="journey-num">I</span><div><h3>The Alpine Crossing</h3><p>Zurich to Lake Como by the Glacier Express and Bernina line, with nights in St. Moritz and Bellagio.</p></div><p class="journey-price">8 days<br><strong>$7,950</strong></p></article>
+          <article class="journey"><span class="journey-num">II</span><div><h3>Venice to the Danube</h3><p>Venice, Vienna and Budapest aboard a restored 1920s sleeper, with opera in Vienna.</p></div><p class="journey-price">10 days<br><strong>$9,400</strong></p></article>
+          <article class="journey"><span class="journey-num">III</span><div><h3>The Scottish Highlands</h3><p>Edinburgh to the Isle of Skye on the West Highland line, with a castle night and a private distillery tasting.</p></div><p class="journey-price">7 days<br><strong>$6,850</strong></p></article>
+          <article class="journey"><span class="journey-num">IV</span><div><h3>Iberia by Rail</h3><p>Madrid, the Douro and Lisbon in first class, with vineyard lunches and a fado dinner.</p></div><p class="journey-price">9 days<br><strong>$7,300</strong></p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="compare" id="compare">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Compare</p>
+          <h2>Side by side</h2>
+          <p>Choose two journeys to compare pace, comfort and season.</p>
+        </div>
+        <div class="compare-pickers" data-pickers>
+          <label>First journey <select name="a"></select></label>
+          <label>Second journey <select name="b"></select></label>
+        </div>
+        <div class="compare-table" data-compare role="table" aria-label="Journey comparison"></div>
+      </div>
+    </section>
+
+    <section class="onboard" id="onboard">
+      <div class="container onboard-grid">
+        <div>
+          <p class="eyebrow">On board</p>
+          <h2>Everything arranged, nothing hurried</h2>
+          <p>Your luggage travels ahead of you. Seats are reserved in first class or a private carriage. Dinners are long, and mornings start late.</p>
+        </div>
+        <ul class="onboard-list">
+          <li><strong>Grand hotels</strong><span>Historic five-star hotels, one or two per journey</span></li>
+          <li><strong>Luggage ahead</strong><span>Bags collected from your room and delivered to the next</span></li>
+          <li><strong>A tour manager</strong><span>With you from the first evening to the last transfer</span></li>
+          <li><strong>Long lunches</strong><span>In vineyards, castles and lakeside villas</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="quote-band">
+      <div class="container">
+        <blockquote>“Every detail was handled with such grace that we simply watched the mountains go by. The finest week of our retirement.”</blockquote>
+        <p>— Elizabeth &amp; Robert H., The Alpine Crossing</p>
+      </div>
+    </section>
+
+    <section class="brochure" id="brochure">
+      <div class="container brochure-grid">
+        <div class="brochure-cover" aria-hidden="true">
+          <div class="cover-inner"><span>The Grand Tour</span><strong>Journeys</strong><em>Season ahead</em></div>
+        </div>
+        <div>
+          <p class="eyebrow">The brochure</p>
+          <h2>Our new brochure, by post or by email</h2>
+          <p>Sixty pages of journeys, hotels and dates for the season ahead.</p>
+          <form class="brochure-form" data-brochure>
+            <fieldset>
+              <legend>Send it</legend>
+              <div class="choice">
+                <label><input type="radio" name="format" value="email" checked><span>By email</span></label>
+                <label><input type="radio" name="format" value="post"><span>By post</span></label>
+              </div>
+            </fieldset>
+            <label>Full name <input name="name" autocomplete="name" required></label>
+            <label>Email <input type="email" name="email" autocomplete="email" required></label>
+            <label class="postal" hidden>Postal address <textarea name="address" rows="3" autocomplete="street-address"></textarea></label>
+            <button class="button button-wide" type="submit">Send my brochure</button>
+            <p class="form-success" role="status"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="brand" href="#top"><img src="assets/mark.svg" alt="" width="32" height="32"><span>The Grand Tour</span></a>
+        <p>Escorted rail journeys for small groups.</p>
+      </div>
+      <div><h3>Reservations</h3><p><a href="tel:+15550111900">(555) 011-1900</a><br><a href="mailto:hello@example.com">hello@example.com</a></p></div>
+      <div><h3>Hours</h3><p>Mon–Sat, 9am–7pm ET</p></div>
+    </div>
+    <div class="container footer-bottom">
+      <p>© <span data-year></span> The Grand Tour</p>
+      <p>Theme by <a href="https://presencewave.com">Presencewave</a></p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
