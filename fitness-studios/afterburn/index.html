@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Afterburn | HIIT, ride and strength classes that keep you coming back</title>
+  <meta name="description" content="Afterburn is a bold, high-energy fitness studio theme with a weekly class schedule, spots-left badges, an intro offer and a book-a-class form.">
+  <link rel="icon" href="assets/mark.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#content">Skip to content</a>
+
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="brand" href="#top"><img src="assets/mark.svg" alt="" width="38" height="38"><span>After<em>burn</em></span></a>
+      <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false" aria-controls="primary-nav"><span></span><span></span></button>
+      <nav class="primary-nav" id="primary-nav">
+        <a href="#classes">Classes</a>
+        <a href="#schedule">Schedule</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#coaches">Coaches</a>
+        <a href="#faq">FAQ</a>
+        <a class="button button-small" href="#book">First class free</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="content">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <p class="eyebrow">HIIT · Ride · Strength · Recover</p>
+          <h1>Sweat hard. <span>Leave lit up.</span></h1>
+          <p class="lead">45-minute classes, coaches who know your name and a room full of people who cheer when you finish. Your first class is on us.</p>
+          <div class="hero-actions">
+            <a class="button" href="#book">Book a free class</a>
+            <a class="button button-ghost" href="#schedule">See this week</a>
+          </div>
+          <ul class="hero-stats">
+            <li><strong>62</strong><span>classes a week</span></li>
+            <li><strong>45</strong><span>minutes each</span></li>
+            <li><strong>4.9</strong><span>from 900+ reviews</span></li>
+          </ul>
+        </div>
+        <aside class="hero-card" aria-label="Next classes">
+          <p class="card-label">Up next today</p>
+          <ul class="next-list" data-next></ul>
+          <a class="button button-wide" href="#schedule">Full schedule</a>
+        </aside>
+      </div>
+      <div class="hero-stripe" aria-hidden="true"><span>Sweat</span><span>Ride</span><span>Lift</span><span>Recover</span><span>Repeat</span><span>Sweat</span><span>Ride</span><span>Lift</span></div>
+    </section>
+
+    <section id="classes">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Four ways to train</p>
+          <h2>Pick your burn.</h2>
+          <p>Every class works at any level. Coaches give you an easier and a harder option for every move.</p>
+        </div>
+        <div class="class-grid">
+          <article class="class-card"><span class="class-tag tag-hiit">HIIT</span><h3>Burn 45</h3><p>Intervals on the treadmill and the floor. Heart rate up, playlist loud.</p><p class="class-meta">45 min · high intensity</p></article>
+          <article class="class-card"><span class="class-tag tag-ride">Ride</span><h3>Rhythm Ride</h3><p>Indoor cycling to the beat, with climbs, sprints and a leaderboard you can hide.</p><p class="class-meta">45 min · cardio</p></article>
+          <article class="class-card"><span class="class-tag tag-lift">Strength</span><h3>Lift Lab</h3><p>Dumbbells, kettlebells and coaching on form. Get stronger every block.</p><p class="class-meta">50 min · strength</p></article>
+          <article class="class-card"><span class="class-tag tag-recover">Recover</span><h3>Stretch & Restore</h3><p>Mobility, foam rolling and breathing to help your body bounce back.</p><p class="class-meta">30 min · low intensity</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="schedule" class="schedule">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">This week</p>
+          <h2>Find a class, grab a spot.</h2>
+          <p>Spots are limited to keep every class coached. When a class fills, join the waitlist and we'll text you if a spot opens.</p>
+        </div>
+        <div class="day-tabs" role="tablist" aria-label="Day" data-days></div>
+        <ul class="class-list" data-schedule></ul>
+      </div>
+    </section>
+
+    <section id="pricing">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Pricing</p>
+          <h2>Start small. Stay for the results.</h2>
+        </div>
+        <div class="price-grid">
+          <article class="price-card">
+            <h3>Intro week</h3>
+            <p class="price">$29</p>
+            <p>Unlimited classes for 7 days. New members only.</p>
+            <ul><li>Any class, any time</li><li>Free shoe and towel hire</li><li>A goal chat with a coach</li></ul>
+            <a class="button button-ghost button-wide" href="#book">Start intro week</a>
+          </article>
+          <article class="price-card price-featured">
+            <p class="badge">Most popular</p>
+            <h3>Unlimited</h3>
+            <p class="price">$159<span>/month</span></p>
+            <p>Train as often as you like. Cancel any time with 30 days' notice.</p>
+            <ul><li>Unlimited classes</li><li>Book 14 days ahead</li><li>2 guest passes a month</li><li>10% off personal training</li></ul>
+            <a class="button button-wide" href="#book">Book a free class first</a>
+          </article>
+          <article class="price-card">
+            <h3>10 class pack</h3>
+            <p class="price">$199</p>
+            <p>For busy weeks and travel months. Valid for 4 months.</p>
+            <ul><li>Any class</li><li>Share with a friend</li><li>Book 7 days ahead</li></ul>
+            <a class="button button-ghost button-wide" href="#book">Get the pack</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="coaches" class="coaches">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Coaches</p>
+          <h2>The people who make you show up.</h2>
+        </div>
+        <div class="coach-grid">
+          <article class="coach"><span class="coach-avatar" style="--hue: 12">JM</span><h3>Jordan M.</h3><p>Head coach · HIIT and strength. Former college sprinter.</p></article>
+          <article class="coach"><span class="coach-avatar" style="--hue: 75">AR</span><h3>Alex R.</h3><p>Ride lead. Builds playlists you'll want to steal.</p></article>
+          <article class="coach"><span class="coach-avatar" style="--hue: 200">PN</span><h3>Priya N.</h3><p>Strength coach. Makes deadlifts feel friendly.</p></article>
+          <article class="coach"><span class="coach-avatar" style="--hue: 280">SK</span><h3>Sam K.</h3><p>Mobility and recovery. Physical therapy background.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="reviews">
+      <div class="container review-grid">
+        <blockquote><p>"I used to dread the gym. Now I'm annoyed when I miss a class."</p><cite>Dana, member since 2024</cite></blockquote>
+        <blockquote><p>"The coaches actually correct your form. My back has never felt better."</p><cite>Marcus, Lift Lab regular</cite></blockquote>
+        <blockquote><p>"Booked the free class on a whim. Signed up for unlimited the same night."</p><cite>Lena, Rhythm Ride</cite></blockquote>
+      </div>
+    </section>
+
+    <section id="book" class="book">
+      <div class="container book-grid">
+        <div>
+          <p class="eyebrow">First class free</p>
+          <h2>Your spot is waiting.</h2>
+          <p>Tell us which class you want to try. We'll save your spot, send you what to bring and meet you at the door ten minutes early.</p>
+          <ul class="checks"><li>No contract, no card needed</li><li>Shoes and towels provided</li><li>Every level welcome</li></ul>
+        </div>
+        <form class="book-form" data-book-form>
+          <div class="form-row">
+            <label>Your name<input type="text" name="name" autocomplete="name" required></label>
+            <label>Email<input type="email" name="email" autocomplete="email" required></label>
+          </div>
+          <label>Class<select name="class" data-class-select required></select></label>
+          <fieldset>
+            <legend>Have you trained before?</legend>
+            <label class="choice"><input type="radio" name="experience" value="new" checked> New to this</label>
+            <label class="choice"><input type="radio" name="experience" value="some"> A little</label>
+            <label class="choice"><input type="radio" name="experience" value="regular"> I train often</label>
+          </fieldset>
+          <button class="button button-wide" type="submit">Save my free spot</button>
+          <p class="form-note" data-book-note role="status"></p>
+        </form>
+      </div>
+    </section>
+
+    <section id="faq">
+      <div class="container narrow">
+        <div class="section-head"><p class="eyebrow">FAQ</p><h2>Before your first class</h2></div>
+        <details><summary>I'm not fit yet. Is that a problem?</summary><p>Not at all. Every move has an easier option and coaches show it first. Most members started exactly where you are.</p></details>
+        <details><summary>What should I bring?</summary><p>Water and something comfortable to move in. We have shoes for Rhythm Ride, towels and lockers.</p></details>
+        <details><summary>How do I cancel a booking?</summary><p>Cancel up to 8 hours before class from your confirmation email, and your spot goes to the waitlist.</p></details>
+        <details><summary>Is there parking?</summary><p>Yes, free parking behind the studio and bike racks out front.</p></details>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="brand" href="#top"><img src="assets/mark.svg" alt="" width="34" height="34"><span>After<em>burn</em></span></a>
+        <p>Boutique HIIT, ride and strength classes.</p>
+      </div>
+      <div>
+        <h3>Visit</h3>
+        <p>412 Mercer Street<br>Austin, TX 78702</p>
+      </div>
+      <div>
+        <h3>Talk to us</h3>
+        <p><a href="tel:+15550147700">(555) 014-7700</a><br><a href="mailto:hello@example.com">hello@example.com</a></p>
+      </div>
+      <div>
+        <h3>Front desk</h3>
+        <p>Mon–Fri 5:30am–9pm<br>Sat–Sun 7am–2pm</p>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>© <span data-year></span> Afterburn</p>
+      <p>Theme by <a href="https://presencewave.com">Presencewave</a></p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

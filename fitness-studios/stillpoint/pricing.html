@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pricing | Stillpoint</title>
+  <meta name="description" content="Class packs and memberships at Stillpoint, with a planner that shows the best value.">
+  <link rel="icon" href="assets/mark.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#content">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html"><img src="assets/mark.svg" alt="" width="40" height="40"><span>Stillpoint</span></a>
+      <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false" aria-controls="primary-nav"><span></span><span></span></button>
+      <nav class="primary-nav" id="primary-nav">
+        <a href="index.html">Home</a>
+        <a href="schedule.html">Schedule</a>
+        <a href="pricing.html" aria-current="page">Pricing</a>
+        <a href="contact.html">Contact</a>
+        <a class="button button-small" href="contact.html#trial">Try a class</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="content">
+    <section class="page-hero">
+      <div class="container">
+        <p class="eyebrow">Pricing</p>
+        <h1>Class packs or membership?</h1>
+        <p class="lead">Move the slider to see which works out cheaper for how often you'll come.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="planner" data-planner>
+          <label for="per-week">Classes a week: <strong data-per-week-label>2</strong></label>
+          <input id="per-week" type="range" min="1" max="6" value="2" data-per-week>
+          <div class="planner-result">
+            <p class="eyebrow">Best value for you</p>
+            <h2 data-best>Unlimited membership</h2>
+            <p data-best-detail></p>
+          </div>
+        </div>
+
+        <div class="plan-grid">
+          <article class="plan" data-plan="drop">
+            <h3>Drop in</h3><p class="price">$28</p><p>One class, any style.</p>
+            <ul><li>Book 3 days ahead</li><li>Mat and props included</li></ul>
+          </article>
+          <article class="plan" data-plan="pack">
+            <h3>10 class pack</h3><p class="price">$220</p><p>$22 a class, valid 6 months.</p>
+            <ul><li>Book 7 days ahead</li><li>Share with a partner</li></ul>
+          </article>
+          <article class="plan" data-plan="unlimited">
+            <h3>Unlimited</h3><p class="price">$169<span>/mo</span></p><p>Every class, every week.</p>
+            <ul><li>Book 14 days ahead</li><li>Free mat storage</li><li>15% off workshops</li></ul>
+          </article>
+          <article class="plan" data-plan="four">
+            <h3>4 a month</h3><p class="price">$89<span>/mo</span></p><p>One class a week, rolls over one month.</p>
+            <ul><li>Book 7 days ahead</li><li>Pause any time</li></ul>
+          </article>
+        </div>
+        <p class="fine-print">Reformer classes use one credit like any other class. Memberships renew monthly; cancel with 30 days' notice.</p>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="container cta-inner">
+        <h2>Not sure yet?</h2>
+        <p>Start with two weeks of unlimited classes for $40.</p>
+        <a class="button button-light" href="contact.html#trial">Try two weeks</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="brand" href="index.html"><img src="assets/mark.svg" alt="" width="36" height="36"><span>Stillpoint</span></a>
+        <p>Yoga and pilates for every body, in a quiet room above the park.</p>
+      </div>
+      <div>
+        <h3>Studio</h3>
+        <p>88 Linden Avenue, 2nd floor<br>Portland, OR 97214</p>
+      </div>
+      <div>
+        <h3>Contact</h3>
+        <p><a href="tel:+15550162200">(555) 016-2200</a><br><a href="mailto:hello@example.com">hello@example.com</a></p>
+      </div>
+      <div>
+        <h3>Explore</h3>
+        <p><a href="schedule.html">Schedule</a><br><a href="pricing.html">Pricing</a><br><a href="contact.html">Contact</a></p>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>© <span data-year></span> Stillpoint Studio</p>
+      <p>Theme by <a href="https://presencewave.com">Presencewave</a></p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
