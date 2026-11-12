@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Personal Best | Personal training with Chris Vega</title>
+  <meta name="description" content="Personal Best is a clean personal trainer theme with a goal finder that recommends a program and price, training packages and a free consult form.">
+  <link rel="icon" href="assets/mark.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#content">Skip to content</a>
+
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="brand" href="#top"><img src="assets/mark.svg" alt="" width="36" height="36"><span>Personal<b>Best</b></span></a>
+      <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false" aria-controls="primary-nav"><span></span><span></span></button>
+      <nav class="primary-nav" id="primary-nav">
+        <a href="#finder">Find your program</a>
+        <a href="#packages">Packages</a>
+        <a href="#results">Results</a>
+        <a href="#about">About</a>
+        <a class="button button-small" href="#consult">Free consult</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="content">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <p class="pill">Personal training · in person & online</p>
+          <h1>Training that fits <span>your</span> life, not the other way round.</h1>
+          <p class="lead">I'm Chris. I help busy people get stronger, move without pain and actually enjoy training, with a plan built around your week.</p>
+          <div class="hero-actions">
+            <a class="button" href="#finder">Find my program</a>
+            <a class="link-arrow" href="#consult">Book a free 20-minute consult →</a>
+          </div>
+        </div>
+        <div class="hero-card">
+          <div class="portrait" aria-hidden="true"><span>CV</span></div>
+          <ul class="hero-proof">
+            <li><strong>11 years</strong> coaching</li>
+            <li><strong>340+</strong> clients trained</li>
+            <li><strong>NSCA-CSCS</strong> certified</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="finder" class="finder-section">
+      <div class="container">
+        <div class="section-head">
+          <p class="pill">Goal finder</p>
+          <h2>Three questions. One plan that fits.</h2>
+          <p>Answer honestly and you'll see the program I'd start you on, with the price.</p>
+        </div>
+        <form class="finder" data-finder>
+          <fieldset>
+            <legend><span>1</span> What's your main goal?</legend>
+            <div class="options">
+              <label class="option"><input type="radio" name="goal" value="strength" checked><span>Get stronger</span></label>
+              <label class="option"><input type="radio" name="goal" value="weight"><span>Lose weight</span></label>
+              <label class="option"><input type="radio" name="goal" value="pain"><span>Move without pain</span></label>
+              <label class="option"><input type="radio" name="goal" value="event"><span>Train for an event</span></label>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend><span>2</span> How much training have you done?</legend>
+            <div class="options">
+              <label class="option"><input type="radio" name="experience" value="new" checked><span>Little or none</span></label>
+              <label class="option"><input type="radio" name="experience" value="some"><span>Some, on and off</span></label>
+              <label class="option"><input type="radio" name="experience" value="lots"><span>I train regularly</span></label>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend><span>3</span> How many days a week can you train?</legend>
+            <div class="options">
+              <label class="option"><input type="radio" name="days" value="2" checked><span>2 days</span></label>
+              <label class="option"><input type="radio" name="days" value="3"><span>3 days</span></label>
+              <label class="option"><input type="radio" name="days" value="4"><span>4+ days</span></label>
+            </div>
+          </fieldset>
+          <output class="result" data-result aria-live="polite"></output>
+        </form>
+      </div>
+    </section>
+
+    <section id="packages">
+      <div class="container">
+        <div class="section-head">
+          <p class="pill">Packages</p>
+          <h2>Simple pricing, no contracts.</h2>
+        </div>
+        <div class="package-grid">
+          <article class="package">
+            <h3>Single session</h3>
+            <p class="price">$85</p>
+            <p>60 minutes, one to one, at the studio or your home gym.</p>
+          </article>
+          <article class="package package-featured">
+            <h3>Monthly coaching</h3>
+            <p class="price">$560<span>/month</span></p>
+            <p>8 sessions a month, a written plan for the days in between and weekly check-ins.</p>
+          </article>
+          <article class="package">
+            <h3>Online coaching</h3>
+            <p class="price">$149<span>/month</span></p>
+            <p>A custom program in the app, form checks by video and a monthly call.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="results" class="results">
+      <div class="container">
+        <div class="section-head">
+          <p class="pill">Results</p>
+          <h2>Real people. Real progress.</h2>
+        </div>
+        <div class="result-grid">
+          <figure><p class="stat">+95 lb</p><blockquote>"My deadlift went from 135 to 230 in six months, and my back pain is gone."</blockquote><figcaption>Nadia, 42, accountant</figcaption></figure>
+          <figure><p class="stat">−28 lb</p><blockquote>"Chris worked around my shifts. First plan I've ever stuck to."</blockquote><figcaption>Derek, 51, nurse</figcaption></figure>
+          <figure><p class="stat">26.2 mi</p><blockquote>"Finished my first marathon injury free, thanks to the strength work."</blockquote><figcaption>Jess, 33, teacher</figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="container about-grid">
+        <div class="about-art" aria-hidden="true"><span></span><span></span><span></span></div>
+        <div>
+          <p class="pill">About</p>
+          <h2>Hi, I'm Chris Vega.</h2>
+          <p>I spent five years as a college strength coach before going independent, because I wanted to help regular people, not just athletes. My clients are parents, nurses, desk workers and retirees.</p>
+          <p>I keep my client list small so every plan is personal and every message gets a reply the same day.</p>
+          <ul class="creds"><li>NSCA Certified Strength & Conditioning Specialist</li><li>Precision Nutrition Level 1</li><li>Pre- and postnatal exercise certified</li></ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="consult" class="consult">
+      <div class="container consult-grid">
+        <div>
+          <p class="pill pill-light">Free consult</p>
+          <h2>Let's talk about your goals.</h2>
+          <p>20 minutes on the phone or video. No pressure, no sales pitch: just an honest chat about where you are and where you want to be.</p>
+        </div>
+        <form class="consult-form" data-consult-form>
+          <div class="form-row">
+            <label>Name<input type="text" name="name" autocomplete="name" required></label>
+            <label>Email<input type="email" name="email" autocomplete="email" required></label>
+          </div>
+          <label>Program you're interested in<input type="text" name="program" data-program-field placeholder="Use the goal finder, or tell me here"></label>
+          <label>Best time to call
+            <select name="time">
+              <option>Weekday mornings</option>
+              <option>Weekday lunchtime</option>
+              <option>Weekday evenings</option>
+              <option>Weekends</option>
+            </select>
+          </label>
+          <button class="button button-wide" type="submit">Book my free consult</button>
+          <p class="form-note" data-consult-note role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a class="brand" href="#top"><img src="assets/mark.svg" alt="" width="32" height="32"><span>Personal<b>Best</b></span></a>
+      <p>Chris Vega Personal Training · Studio 3, 77 Harbor Lane, San Diego, CA 92101 · <a href="tel:+15550126600">(555) 012-6600</a> · <a href="mailto:hello@example.com">hello@example.com</a></p>
+    </div>
+    <div class="container footer-bottom">
+      <p>© <span data-year></span> Personal Best</p>
+      <p>Theme by <a href="https://presencewave.com">Presencewave</a></p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

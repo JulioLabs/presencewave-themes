@@ -38,6 +38,18 @@ Themes for tour organizers who run group vacations, escorted tours and custom gr
 | Private Groups | Practical multi-page theme for custom group trips with a quote builder | [group-tours-private-groups.zip](https://github.com/JulioLabs/presencewave-themes/releases/latest/download/group-tours-private-groups.zip) |
 | Grand Tour | Dark, elegant landing page for rail journeys with a side-by-side comparison | [group-tours-grand-tour.zip](https://github.com/JulioLabs/presencewave-themes/releases/latest/download/group-tours-grand-tour.zip) |
 
+## Fitness studios
+
+Themes for boutique fitness studios, yoga and pilates studios, strength gyms, personal trainers and community gyms. [Browse the collection](fitness-studios/)
+
+| Theme | Style | Download |
+|---|---|---|
+| Afterburn | Bold, dark landing page for HIIT and cycle studios with a weekly class schedule | [fitness-studios-afterburn.zip](https://github.com/JulioLabs/presencewave-themes/releases/latest/download/fitness-studios-afterburn.zip) |
+| Stillpoint | Calm multi-page theme for yoga and pilates with a filterable timetable | [fitness-studios-stillpoint.zip](https://github.com/JulioLabs/presencewave-themes/releases/latest/download/fitness-studios-stillpoint.zip) |
+| Ironworks | Industrial landing page for strength gyms with a membership comparison | [fitness-studios-ironworks.zip](https://github.com/JulioLabs/presencewave-themes/releases/latest/download/fitness-studios-ironworks.zip) |
+| Personal Best | Clean landing page for personal trainers with a goal finder | [fitness-studios-personal-best.zip](https://github.com/JulioLabs/presencewave-themes/releases/latest/download/fitness-studios-personal-best.zip) |
+| Neighborhood Gym | Friendly multi-page theme for community gyms with a membership builder | [fitness-studios-neighborhood-gym.zip](https://github.com/JulioLabs/presencewave-themes/releases/latest/download/fitness-studios-neighborhood-gym.zip) |
+
 ## Download links
 
 Each theme is attached to the [latest release](https://github.com/JulioLabs/presencewave-themes/releases/latest) as `<industry>-<theme>.zip`, for example `lawn-care-fairway.zip`. The cleaning themes also keep their original names (`afterglow.zip` and so on), so older links keep working.

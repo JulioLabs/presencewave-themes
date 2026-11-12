@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Timetable | Stillpoint</title>
+  <meta name="description" content="This week's yoga and pilates classes at Stillpoint, filtered by style and level.">
+  <link rel="icon" href="assets/mark.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#content">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html"><img src="assets/mark.svg" alt="" width="40" height="40"><span>Stillpoint</span></a>
+      <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false" aria-controls="primary-nav"><span></span><span></span></button>
+      <nav class="primary-nav" id="primary-nav">
+        <a href="index.html">Home</a>
+        <a href="schedule.html" aria-current="page">Schedule</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="contact.html">Contact</a>
+        <a class="button button-small" href="contact.html#trial">Try a class</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="content">
+    <section class="page-hero">
+      <div class="container">
+        <p class="eyebrow">Timetable</p>
+        <h1>This week at Stillpoint</h1>
+        <p class="lead">Filter by style and level. Reformer classes hold eight; mat and yoga classes hold twelve.</p>
+      </div>
+    </section>
+
+    <section class="timetable-section">
+      <div class="container">
+        <form class="filters" data-filters aria-label="Filter classes">
+          <label>Style
+            <select name="style">
+              <option value="all">All styles</option>
+              <option value="flow">Slow flow</option>
+              <option value="reformer">Reformer pilates</option>
+              <option value="mat">Mat pilates</option>
+              <option value="yin">Yin & restore</option>
+            </select>
+          </label>
+          <label>Level
+            <select name="level">
+              <option value="all">All levels</option>
+              <option value="Beginner">Beginner friendly</option>
+              <option value="Intermediate">Intermediate</option>
+            </select>
+          </label>
+          <p class="filter-count" data-count role="status"></p>
+        </form>
+        <div class="timetable" data-timetable></div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="container cta-inner">
+        <h2>Never been to a class?</h2>
+        <p>Pick anything marked "Beginner friendly" and tell your teacher it's your first time.</p>
+        <a class="button button-light" href="contact.html#trial">Book my first class</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="brand" href="index.html"><img src="assets/mark.svg" alt="" width="36" height="36"><span>Stillpoint</span></a>
+        <p>Yoga and pilates for every body, in a quiet room above the park.</p>
+      </div>
+      <div>
+        <h3>Studio</h3>
+        <p>88 Linden Avenue, 2nd floor<br>Portland, OR 97214</p>
+      </div>
+      <div>
+        <h3>Contact</h3>
+        <p><a href="tel:+15550162200">(555) 016-2200</a><br><a href="mailto:hello@example.com">hello@example.com</a></p>
+      </div>
+      <div>
+        <h3>Explore</h3>
+        <p><a href="schedule.html">Schedule</a><br><a href="pricing.html">Pricing</a><br><a href="contact.html">Contact</a></p>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>© <span data-year></span> Stillpoint Studio</p>
+      <p>Theme by <a href="https://presencewave.com">Presencewave</a></p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
