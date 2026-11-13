@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact and booking | Pipeline Plumbing</title>
+  <meta name="description" content="Book a plumber online, call or text.">
+  <link rel="icon" href="assets/mark.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Mulish:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#content">Skip to content</a>
+
+  <div class="top-strip">
+    <div class="container top-strip-inner">
+      <p>Family owned since 1998 · Licensed master plumbers</p>
+      <a href="tel:+15550143300">Call (555) 014-3300</a>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html"><img src="assets/mark.svg" alt="" width="42" height="42"><span>Pipeline<small>Plumbing</small></span></a>
+      <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false" aria-controls="primary-nav"><span></span><span></span></button>
+      <nav class="primary-nav" id="primary-nav">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services & prices</a>
+        <a href="about.html">About</a>
+        <a href="contact.html" aria-current="page">Contact</a>
+        <a class="button button-small" href="contact.html#book">Book a plumber</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="content">
+    <section class="page-hero">
+      <div class="container">
+        <p class="eyebrow">Contact</p>
+        <h1>Let's get it fixed.</h1>
+        <p class="lead">Book online, call or text. We answer the phone ourselves, seven days a week.</p>
+      </div>
+    </section>
+
+    <section id="book">
+      <div class="container contact-grid">
+        <form class="book-form" data-book-form>
+          <h2>Book a visit</h2>
+          <label>Job<select name="job" data-job-select required></select></label>
+          <fieldset>
+            <legend>Best time</legend>
+            <div class="time-row">
+              <label class="time-choice"><input type="radio" name="time" value="morning" checked><span>Morning<small>8–12</small></span></label>
+              <label class="time-choice"><input type="radio" name="time" value="afternoon"><span>Afternoon<small>12–4</small></span></label>
+              <label class="time-choice"><input type="radio" name="time" value="evening"><span>Evening<small>4–7</small></span></label>
+            </div>
+          </fieldset>
+          <div class="form-row">
+            <label>Your name<input type="text" name="name" autocomplete="name" required></label>
+            <label>Phone<input type="tel" name="phone" autocomplete="tel" required></label>
+          </div>
+          <label>Address<input type="text" name="address" autocomplete="street-address" required></label>
+          <label>Anything we should know?<textarea name="notes" rows="3"></textarea></label>
+          <button class="button button-wide" type="submit">Request my visit</button>
+          <p class="form-note" data-book-note role="status"></p>
+        </form>
+        <aside class="contact-card">
+          <h2>Talk to a person</h2>
+          <p class="big-phone"><a href="tel:+15550143300">(555) 014-3300</a></p>
+          <p>Text us a photo of the problem and we'll tell you what it probably is.</p>
+          <h3>Visit</h3>
+          <p>48 Elm Street<br>Raleigh, NC 27601</p>
+          <h3>We serve</h3>
+          <p>Raleigh, Cary, Durham, Wake Forest, Apex and Garner.</p>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="brand" href="index.html"><img src="assets/mark.svg" alt="" width="38" height="38"><span>Pipeline<small>Plumbing</small></span></a>
+        <p>Friendly, upfront plumbing for homes and small businesses.</p>
+      </div>
+      <div>
+        <h3>Pages</h3>
+        <p><a href="services.html">Services & prices</a><br><a href="about.html">About us</a><br><a href="contact.html">Contact</a></p>
+      </div>
+      <div>
+        <h3>Call or text</h3>
+        <p><a href="tel:+15550143300">(555) 014-3300</a><br><a href="mailto:hello@example.com">hello@example.com</a></p>
+      </div>
+      <div>
+        <h3>Hours</h3>
+        <p>Mon–Fri 7am–6pm<br>Sat 8am–2pm<br>Emergencies any time</p>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>© <span data-year></span> Pipeline Plumbing · License #PL-000000</p>
+      <p>Theme by <a href="https://presencewave.com">Presencewave</a></p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

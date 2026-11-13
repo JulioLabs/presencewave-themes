@@ -50,6 +50,18 @@ Themes for boutique fitness studios, yoga and pilates studios, strength gyms, pe
 | Personal Best | Clean landing page for personal trainers with a goal finder | [fitness-studios-personal-best.zip](https://github.com/JulioLabs/presencewave-themes/releases/latest/download/fitness-studios-personal-best.zip) |
 | Neighborhood Gym | Friendly multi-page theme for community gyms with a membership builder | [fitness-studios-neighborhood-gym.zip](https://github.com/JulioLabs/presencewave-themes/releases/latest/download/fitness-studios-neighborhood-gym.zip) |
 
+## Home services
+
+Themes for plumbers, heating and cooling companies, electricians, multi-trade shops and handyman crews. [Browse the collection](home-services/)
+
+| Theme | Style | Download |
+|---|---|---|
+| Dispatch | Bold landing page for multi-trade companies with a 24/7 emergency bar and a ZIP code check | [home-services-dispatch.zip](https://github.com/JulioLabs/presencewave-themes/releases/latest/download/home-services-dispatch.zip) |
+| Pipeline | Friendly multi-page theme for plumbers with an upfront price guide | [home-services-pipeline.zip](https://github.com/JulioLabs/presencewave-themes/releases/latest/download/home-services-pipeline.zip) |
+| Comfort Air | Clean landing page for HVAC companies with a season switch and a care plan builder | [home-services-comfort-air.zip](https://github.com/JulioLabs/presencewave-themes/releases/latest/download/home-services-comfort-air.zip) |
+| Live Wire | Dark landing page for electricians with a project estimator | [home-services-live-wire.zip](https://github.com/JulioLabs/presencewave-themes/releases/latest/download/home-services-live-wire.zip) |
+| Handy Crew | Warm multi-page theme for handyman businesses with a book-a-visit picker | [home-services-handy-crew.zip](https://github.com/JulioLabs/presencewave-themes/releases/latest/download/home-services-handy-crew.zip) |
+
 ## Download links
 
 Each theme is attached to the [latest release](https://github.com/JulioLabs/presencewave-themes/releases/latest) as `<industry>-<theme>.zip`, for example `lawn-care-fairway.zip`. The cleaning themes also keep their original names (`afterglow.zip` and so on), so older links keep working.
