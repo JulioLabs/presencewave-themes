@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Comfort Air | Heating and cooling, repaired and cared for</title>
+  <meta name="description" content="Comfort Air is a clean heating and cooling theme with a season switch, a maintenance plan builder and a tune-up booking form.">
+  <link rel="icon" href="assets/mark.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-season="cooling">
+  <a class="skip-link" href="#content">Skip to content</a>
+
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="brand" href="#top"><img src="assets/mark.svg" alt="" width="40" height="40"><span>Comfort<b>Air</b></span></a>
+      <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false" aria-controls="primary-nav"><span></span><span></span></button>
+      <nav class="primary-nav" id="primary-nav">
+        <a href="#services">Services</a>
+        <a href="#plans">Plans</a>
+        <a href="#systems">New systems</a>
+        <a href="#faq">FAQ</a>
+        <a class="phone-link" href="tel:+15550144400">(555) 014-4400</a>
+        <a class="button button-small" href="#book">Book a visit</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="content">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <div class="season-switch" role="group" aria-label="Season">
+            <button type="button" data-season-button="cooling" aria-pressed="true"><span aria-hidden="true">☀</span> Cooling</button>
+            <button type="button" data-season-button="heating" aria-pressed="false"><span aria-hidden="true">❄</span> Heating</button>
+          </div>
+          <h1 data-season-text="title">Stay cool when it's <span>98° outside.</span></h1>
+          <p class="lead" data-season-text="lead">Same-day AC repair, honest advice on when to replace, and a spring tune-up that catches small problems before the first heat wave.</p>
+          <div class="hero-actions">
+            <a class="button" href="#book" data-season-text="cta">Book an AC tune-up</a>
+            <a class="button button-ghost" href="#plans">Build a care plan</a>
+          </div>
+          <ul class="hero-points">
+            <li>Same-day repairs</li>
+            <li>NATE-certified techs</li>
+            <li>Financing from 0% APR</li>
+          </ul>
+        </div>
+        <div class="thermostat" aria-hidden="true">
+          <div class="dial">
+            <p class="dial-mode" data-season-text="mode">Cooling to</p>
+            <p class="dial-temp"><span data-season-text="temp">72</span>°</p>
+            <p class="dial-sub">Indoor comfort, all year</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Services</p>
+          <h2>Everything that keeps your home comfortable.</h2>
+        </div>
+        <div class="service-grid">
+          <article class="service-card cool"><h3>AC repair</h3><p>Warm air, strange noises or a unit that won't turn on. Most repairs done the same day.</p></article>
+          <article class="service-card warm"><h3>Furnace repair</h3><p>No heat, short cycling or a pilot that keeps going out. Gas, electric and oil.</p></article>
+          <article class="service-card cool"><h3>Heat pumps</h3><p>Install, repair and service for ducted heat pumps and ductless mini-splits.</p></article>
+          <article class="service-card warm"><h3>Tune-ups</h3><p>A 21-point check that keeps your system efficient and your warranty valid.</p></article>
+          <article class="service-card cool"><h3>Indoor air</h3><p>Filters, humidifiers, UV lights and duct cleaning for easier breathing.</p></article>
+          <article class="service-card warm"><h3>Thermostats</h3><p>Smart thermostats installed, set up and connected to your phone.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="plans" class="plans">
+      <div class="container plan-grid">
+        <div>
+          <p class="eyebrow">Comfort care plan</p>
+          <h2>Build a plan for your home.</h2>
+          <p class="muted">Two tune-ups a year, priority booking and money off repairs. Choose how many systems you have and the level of care.</p>
+          <div class="builder">
+            <div class="builder-row">
+              <p class="builder-label" id="systems-label">Systems in your home</p>
+              <div class="stepper" role="group" aria-labelledby="systems-label">
+                <button type="button" data-step="-1" aria-label="Fewer systems">−</button>
+                <output data-systems>1</output>
+                <button type="button" data-step="1" aria-label="More systems">+</button>
+              </div>
+              <p class="builder-hint">A furnace and an AC count as one system. Add one for each heat pump, boiler or mini-split zone.</p>
+            </div>
+            <div class="builder-row">
+              <p class="builder-label">Level of care</p>
+              <div class="tier-row" data-tiers></div>
+            </div>
+          </div>
+        </div>
+        <aside class="plan-summary" aria-live="polite">
+          <p class="summary-label">Your plan</p>
+          <p class="summary-name" data-plan-name></p>
+          <p class="summary-price"><span data-plan-month></span>/month</p>
+          <p class="summary-year" data-plan-year></p>
+          <ul class="summary-list" data-plan-perks></ul>
+          <p class="summary-save" data-plan-save></p>
+          <a class="button button-wide" href="#book" data-plan-cta>Start this plan</a>
+        </aside>
+      </div>
+    </section>
+
+    <section id="systems" class="systems">
+      <div class="container systems-grid">
+        <div>
+          <p class="eyebrow">New systems</p>
+          <h2>Repair or replace? We'll tell you straight.</h2>
+          <p class="muted">If your system is over 12 years old, needs a repair costing more than a third of a new one, or your bills keep climbing, replacing usually pays off. Otherwise, we'll fix it.</p>
+          <ul class="ticks"><li>Free in-home estimates</li><li>Rebates and tax credits applied for you</li><li>10-year parts and labor warranty</li></ul>
+        </div>
+        <div class="age-card">
+          <p class="age-title">How old is your system?</p>
+          <input type="range" min="1" max="25" value="9" aria-label="System age in years" data-age>
+          <p class="age-value"><strong data-age-value>9</strong> years</p>
+          <p class="age-advice" data-age-advice></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="reviews">
+      <div class="container review-grid">
+        <blockquote><p>"Our AC quit during a July heat wave. They had it running again by dinner."</p><cite>Gloria and Ben, Aurora</cite></blockquote>
+        <blockquote><p>"They talked me out of a new furnace I didn't need. That's why I'm on their plan now."</p><cite>Tom R., Lakewood</cite></blockquote>
+        <blockquote><p>"Tune-up reminders, on-time techs, and the house is finally even in every room."</p><cite>Aisha N., Littleton</cite></blockquote>
+      </div>
+    </section>
+
+    <section id="book" class="book">
+      <div class="container book-grid">
+        <div>
+          <p class="eyebrow">Book a visit</p>
+          <h2>Comfort, scheduled.</h2>
+          <p class="muted">Choose a repair, a tune-up or a free estimate for a new system. We'll confirm your time by text.</p>
+        </div>
+        <form class="book-form" data-book-form>
+          <label>Visit type
+            <select name="type" data-visit-select>
+              <option value="repair">Repair</option>
+              <option value="tune-up">Tune-up</option>
+              <option value="estimate">Free estimate for a new system</option>
+            </select>
+          </label>
+          <div class="form-row">
+            <label>Your name<input type="text" name="name" autocomplete="name" required></label>
+            <label>Phone<input type="tel" name="phone" autocomplete="tel" required></label>
+          </div>
+          <div class="form-row">
+            <label>ZIP code<input type="text" name="zip" inputmode="numeric" autocomplete="postal-code" maxlength="5" required></label>
+            <label>Preferred day<input type="date" name="day" required></label>
+          </div>
+          <button class="button button-wide" type="submit">Book my visit</button>
+          <p class="form-note" data-book-note role="status"></p>
+        </form>
+      </div>
+    </section>
+
+    <section id="faq">
+      <div class="container narrow">
+        <div class="section-head"><p class="eyebrow">FAQ</p><h2>Questions we hear a lot</h2></div>
+        <details><summary>How often should I service my system?</summary><p>Twice a year: the AC in spring and the furnace in fall. A heat pump does both jobs, so it needs both visits.</p></details>
+        <details><summary>How often should I change my filter?</summary><p>Every one to three months, more often with pets. Plan members get filters delivered.</p></details>
+        <details><summary>Do you offer financing?</summary><p>Yes, from 0% APR for 18 months on new systems, subject to approval.</p></details>
+        <details><summary>Can I cancel the care plan?</summary><p>Any time. If you've had a tune-up, we just charge the regular price for it.</p></details>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="brand" href="#top"><img src="assets/mark.svg" alt="" width="36" height="36"><span>Comfort<b>Air</b></span></a>
+        <p>Heating and cooling repair, care plans and new systems.</p>
+      </div>
+      <div><h3>Visit</h3><p>2250 Larimer Street<br>Denver, CO 80205</p></div>
+      <div><h3>Call</h3><p><a href="tel:+15550144400">(555) 014-4400</a><br><a href="mailto:hello@example.com">hello@example.com</a></p></div>
+      <div><h3>Hours</h3><p>Mon–Sat 7am–8pm<br>Emergency repairs 24/7</p></div>
+    </div>
+    <div class="container footer-bottom">
+      <p>© <span data-year></span> Comfort Air · ROC #000000</p>
+      <p>Theme by <a href="https://presencewave.com">Presencewave</a></p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

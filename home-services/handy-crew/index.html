@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Handy Crew | Small repairs and odd jobs, done in one visit</title>
+  <meta name="description" content="Handy Crew is a warm multi-page handyman theme with a book-a-visit picker by day and arrival window.">
+  <link rel="icon" href="assets/mark.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@600;700;800&family=Karla:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#content">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html"><img src="assets/mark.svg" alt="" width="44" height="44"><span>Handy Crew</span></a>
+      <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false" aria-controls="primary-nav"><span></span><span></span></button>
+      <nav class="primary-nav" id="primary-nav">
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="services.html">Services</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="contact.html">Book</a>
+        <a class="button button-small" href="contact.html#booking">Book a visit</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="content">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <p class="sticker">Your to-do list, done.</p>
+          <h1>One crew for all the little jobs around the house.</h1>
+          <p class="lead">Leaky taps, sticky doors, shelves, drywall patches and that light fixture still in its box. Book a visit and we'll work through the list.</p>
+          <div class="hero-actions">
+            <a class="button" href="contact.html#booking">Pick a time</a>
+            <a class="button button-ghost" href="pricing.html">See pricing</a>
+          </div>
+        </div>
+        <div class="todo-card" aria-label="A typical visit">
+          <p class="todo-title">Saturday's list</p>
+          <ul class="todo-list" data-todo>
+            <li><label><input type="checkbox" checked><span class="tick" aria-hidden="true"></span>Fix the dripping bathroom tap</label></li>
+            <li><label><input type="checkbox" checked><span class="tick" aria-hidden="true"></span>Hang the hallway mirror</label></li>
+            <li><label><input type="checkbox"><span class="tick" aria-hidden="true"></span>Patch the hole behind the door</label></li>
+            <li><label><input type="checkbox"><span class="tick" aria-hidden="true"></span>Replace the porch light</label></li>
+            <li><label><input type="checkbox"><span class="tick" aria-hidden="true"></span>Re-caulk the tub</label></li>
+          </ul>
+          <p class="todo-foot" data-todo-count></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="jobs">
+      <div class="container">
+        <div class="section-head"><p class="eyebrow">Popular jobs</p><h2>If it's on your list, it's on ours.</h2></div>
+        <div class="job-grid">
+          <article><span class="job-badge" style="--c: var(--terracotta)">01</span><h3>Fix it</h3><p>Taps, toilets, doors, drawers, fences and anything that squeaks, sticks or drips.</p></article>
+          <article><span class="job-badge" style="--c: var(--mustard)">02</span><h3>Hang it</h3><p>TVs, shelves, mirrors, art, curtains and blinds. Level the first time.</p></article>
+          <article><span class="job-badge" style="--c: var(--sage)">03</span><h3>Build it</h3><p>Flat-pack furniture, closet systems, garden beds and small decks.</p></article>
+          <article><span class="job-badge" style="--c: var(--brown)">04</span><h3>Freshen it</h3><p>Drywall patches, touch-up painting, caulking, grout and weatherstripping.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="how">
+      <div class="container how-grid">
+        <div>
+          <p class="eyebrow">How a visit works</p>
+          <h2>Book the time. Bring the list.</h2>
+        </div>
+        <ol class="how-list">
+          <li><strong>Pick a day and an arrival window</strong> Book online. Most weeks we have openings in two or three days.</li>
+          <li><strong>Send us your list</strong> Add a few photos, and we'll bring the right tools and common parts.</li>
+          <li><strong>We work through it</strong> Top of the list first. Anything left over, we quote before leaving.</li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="quote-band">
+      <div class="container">
+        <blockquote><p>"Two hours, eleven jobs. I'd been putting some of them off for three years."</p><cite>Nadia F., homeowner</cite></blockquote>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="brand" href="index.html"><img src="assets/mark.svg" alt="" width="40" height="40"><span>Handy Crew</span></a>
+        <p>Small repairs, odd jobs and the to-do list you never get to.</p>
+      </div>
+      <div><h3>Explore</h3><p><a href="services.html">Services</a><br><a href="pricing.html">Pricing</a><br><a href="contact.html">Book a visit</a></p></div>
+      <div><h3>Say hi</h3><p><a href="tel:+15550146600">(555) 014-6600</a><br><a href="mailto:hello@example.com">hello@example.com</a></p></div>
+      <div><h3>Hours</h3><p>Mon–Fri 8am–5pm<br>Saturday 9am–1pm</p></div>
+    </div>
+    <div class="container footer-bottom">
+      <p>© <span data-year></span> Handy Crew · Licensed and insured</p>
+      <p>Theme by <a href="https://presencewave.com">Presencewave</a></p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

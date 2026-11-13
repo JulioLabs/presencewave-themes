@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dispatch | Plumbing, heating, cooling and electrical, 24/7</title>
+  <meta name="description" content="Dispatch is a bold home services theme with a 24/7 emergency bar, a ZIP code service-area check and a request-service form that picks the trade and urgency.">
+  <link rel="icon" href="assets/mark.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800;900&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#content">Skip to content</a>
+
+  <div class="emergency-bar">
+    <div class="container emergency-inner">
+      <p><span class="live-dot" aria-hidden="true"></span><strong>24/7 emergency service.</strong> <span class="hide-small">Burst pipe, no heat or a sparking outlet? A technician is on call now.</span></p>
+      <a class="emergency-call" href="tel:+15550142200">Call (555) 014-2200</a>
+    </div>
+  </div>
+
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="brand" href="#top"><img src="assets/mark.svg" alt="" width="40" height="40"><span>Dispatch<small>Home Services</small></span></a>
+      <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false" aria-controls="primary-nav"><span></span><span></span></button>
+      <nav class="primary-nav" id="primary-nav">
+        <a href="#services">Services</a>
+        <a href="#area">Service area</a>
+        <a href="#why">Why us</a>
+        <a href="#plans">Plans</a>
+        <a href="#faq">FAQ</a>
+        <a class="button button-small" href="#request">Request service</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="content">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <p class="eyebrow">Plumbing · Heating & cooling · Electrical</p>
+          <h1>Fixed right. <span>Fixed today.</span></h1>
+          <p class="lead">Licensed technicians in fully stocked trucks, upfront prices before any work starts, and a two-hour arrival window we actually keep.</p>
+          <div class="hero-actions">
+            <a class="button" href="#request">Request service</a>
+            <a class="button button-outline" href="tel:+15550142200">Call now</a>
+          </div>
+          <ul class="trust-list">
+            <li><strong>4.9★</strong><span>1,800+ reviews</span></li>
+            <li><strong>60 min</strong><span>average emergency arrival</span></li>
+            <li><strong>Licensed</strong><span>bonded and insured</span></li>
+          </ul>
+        </div>
+        <aside class="zip-card" aria-labelledby="zip-title">
+          <p class="card-label" id="zip-title">Do we come to you?</p>
+          <form class="zip-form" data-zip-form>
+            <label for="zip">Your ZIP code</label>
+            <div class="zip-row">
+              <input id="zip" name="zip" inputmode="numeric" autocomplete="postal-code" maxlength="5" placeholder="e.g. 43215" required>
+              <button class="button" type="submit">Check</button>
+            </div>
+          </form>
+          <div class="zip-result" data-zip-result role="status" aria-live="polite">
+            <p>Enter your ZIP code to see if we serve your area and how soon we can be there.</p>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="services" class="services">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">What we fix</p>
+          <h2>One call for the whole house.</h2>
+          <p>Every truck carries the parts for the most common repairs, so most jobs are done on the first visit.</p>
+        </div>
+        <div class="trade-grid">
+          <article class="trade-card">
+            <span class="trade-icon trade-plumbing" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M4 7h10v4h4v9" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/><path d="M18 22c-1.7 0-3-1.2-3-2.8 0-1.6 3-5.2 3-5.2s3 3.6 3 5.2c0 1.6-1.3 2.8-3 2.8z" fill="currentColor"/></svg>
+            </span>
+            <h3>Plumbing</h3>
+            <ul><li>Leaks and burst pipes</li><li>Drain and sewer clearing</li><li>Water heaters, tank and tankless</li><li>Toilets, faucets and disposals</li></ul>
+            <a class="text-link" href="#request" data-trade-link="Plumbing">Book a plumber</a>
+          </article>
+          <article class="trade-card">
+            <span class="trade-icon trade-hvac" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M12 2v20M4 6l16 12M20 6 4 18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>
+            </span>
+            <h3>Heating & cooling</h3>
+            <ul><li>Furnace and boiler repair</li><li>AC repair and recharge</li><li>Heat pumps and mini-splits</li><li>Seasonal tune-ups</li></ul>
+            <a class="text-link" href="#request" data-trade-link="Heating & cooling">Book an HVAC tech</a>
+          </article>
+          <article class="trade-card">
+            <span class="trade-icon trade-electrical" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M13 2 4 14h7l-1 8 9-12h-7z" fill="currentColor"/></svg>
+            </span>
+            <h3>Electrical</h3>
+            <ul><li>Outlets, switches and breakers</li><li>Panel upgrades</li><li>EV chargers</li><li>Lighting and ceiling fans</li></ul>
+            <a class="text-link" href="#request" data-trade-link="Electrical">Book an electrician</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="area" class="area">
+      <div class="container area-grid">
+        <div>
+          <p class="eyebrow">Service area</p>
+          <h2>Close by, so we get there fast.</h2>
+          <p>Our trucks are parked in three neighborhoods every night, so a technician is never more than 25 minutes from you.</p>
+          <ul class="area-list" data-area-list></ul>
+        </div>
+        <div class="area-map" aria-hidden="true">
+          <svg viewBox="0 0 400 320">
+            <rect width="400" height="320" rx="24" fill="var(--map-bg)"/>
+            <path d="M0 210 C90 190 140 240 220 220 S340 160 400 180" fill="none" stroke="var(--map-road)" stroke-width="14"/>
+            <path d="M150 0 C170 90 130 170 170 320" fill="none" stroke="var(--map-road)" stroke-width="10"/>
+            <path d="M260 0 L290 320" fill="none" stroke="var(--map-road)" stroke-width="8"/>
+            <circle cx="200" cy="160" r="128" fill="var(--map-zone)" stroke="var(--accent)" stroke-width="3" stroke-dasharray="10 8"/>
+            <g fill="var(--accent)"><circle cx="160" cy="130" r="10"/><circle cx="250" cy="190" r="10"/><circle cx="215" cy="95" r="10"/></g>
+            <g fill="var(--navy)"><rect x="150" y="122" width="20" height="16" rx="3"/><rect x="240" y="182" width="20" height="16" rx="3"/><rect x="205" y="87" width="20" height="16" rx="3"/></g>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <section id="why" class="why">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Why homeowners call us back</p>
+          <h2>No surprises. Not on the bill, not on the clock.</h2>
+        </div>
+        <div class="why-grid">
+          <article><span class="why-num">01</span><h3>Upfront pricing</h3><p>You approve a flat price before we start. If the job takes longer, that's on us.</p></article>
+          <article><span class="why-num">02</span><h3>Two-hour windows</h3><p>We text when the technician is on the way, with their name and photo.</p></article>
+          <article><span class="why-num">03</span><h3>Clean work</h3><p>Shoe covers, drop cloths, and we take the old parts with us.</p></article>
+          <article><span class="why-num">04</span><h3>One-year guarantee</h3><p>Every repair is covered for a year, parts and labor.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="request" class="request">
+      <div class="container request-grid">
+        <div>
+          <p class="eyebrow">Request service</p>
+          <h2>Tell us what's wrong. We'll take it from there.</h2>
+          <p>We call back within 15 minutes during business hours to confirm a window. For anything that can't wait, call us: we answer 24/7.</p>
+          <ul class="checks"><li>No charge to come out when you book a repair</li><li>Evening and weekend visits</li><li>Senior and military discounts</li></ul>
+        </div>
+        <form class="request-form" data-request-form>
+          <fieldset>
+            <legend>What do you need?</legend>
+            <div class="chip-row" data-trade-chips>
+              <label class="chip"><input type="radio" name="trade" value="Plumbing" checked><span>Plumbing</span></label>
+              <label class="chip"><input type="radio" name="trade" value="Heating & cooling"><span>Heating & cooling</span></label>
+              <label class="chip"><input type="radio" name="trade" value="Electrical"><span>Electrical</span></label>
+            </div>
+          </fieldset>
+          <label>What's going on?<select name="issue" data-issue-select required></select></label>
+          <fieldset>
+            <legend>How urgent is it?</legend>
+            <div class="urgency-row">
+              <label class="urgency"><input type="radio" name="urgency" value="emergency"><span><strong>Emergency</strong><small>Now, 24/7</small></span></label>
+              <label class="urgency"><input type="radio" name="urgency" value="soon" checked><span><strong>Soon</strong><small>Today or tomorrow</small></span></label>
+              <label class="urgency"><input type="radio" name="urgency" value="flexible"><span><strong>Flexible</strong><small>This week</small></span></label>
+            </div>
+          </fieldset>
+          <div class="form-row">
+            <label>Your name<input type="text" name="name" autocomplete="name" required></label>
+            <label>Phone<input type="tel" name="phone" autocomplete="tel" required></label>
+          </div>
+          <label>ZIP code<input type="text" name="zip" inputmode="numeric" autocomplete="postal-code" maxlength="5" required></label>
+          <button class="button button-wide" type="submit">Request my visit</button>
+          <p class="form-note" data-request-note role="status"></p>
+        </form>
+      </div>
+    </section>
+
+    <section id="plans" class="plans">
+      <div class="container plans-inner">
+        <div>
+          <p class="eyebrow">Home care plan</p>
+          <h2>Two tune-ups a year. Priority when it breaks.</h2>
+          <p>A spring AC check, a fall furnace check, a yearly plumbing and electrical safety inspection, 15% off repairs and no overtime fees.</p>
+        </div>
+        <div class="plan-price">
+          <p><strong>$19</strong>/month</p>
+          <a class="button button-light" href="#request">Join the plan</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="reviews">
+      <div class="container review-grid">
+        <blockquote><p>"Water heater died on a Sunday night. They had a new one in by Monday lunch, at the price they quoted."</p><cite>Renee T., Clintonville</cite></blockquote>
+        <blockquote><p>"The tech showed me photos of the problem before fixing it. First time I didn't feel upsold."</p><cite>Marcus L., German Village</cite></blockquote>
+        <blockquote><p>"Called about the AC at 9am, cool house by 2pm. The plan pays for itself."</p><cite>Dana P., Bexley</cite></blockquote>
+      </div>
+    </section>
+
+    <section id="faq">
+      <div class="container narrow">
+        <div class="section-head"><p class="eyebrow">FAQ</p><h2>Good questions</h2></div>
+        <details><summary>Do you charge to come out?</summary><p>A $79 diagnostic fee covers the visit and a written price for the repair. If you go ahead with the repair, the fee is waived.</p></details>
+        <details><summary>Are your technicians licensed?</summary><p>Yes. Every plumber, HVAC technician and electrician is licensed in the state, background checked and trained by us.</p></details>
+        <details><summary>Do emergency visits cost more?</summary><p>Nights, weekends and holidays have a flat $95 after-hours fee. Home care plan members never pay it.</p></details>
+        <details><summary>Can you work with my home warranty?</summary><p>We work with most home warranty companies. Tell us yours when you book and we'll check before we come.</p></details>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="brand" href="#top"><img src="assets/mark.svg" alt="" width="36" height="36"><span>Dispatch<small>Home Services</small></span></a>
+        <p>Plumbing, heating, cooling and electrical repair.</p>
+      </div>
+      <div>
+        <h3>Office</h3>
+        <p>1180 Harbor Road<br>Columbus, OH 43215</p>
+      </div>
+      <div>
+        <h3>Call or text</h3>
+        <p><a href="tel:+15550142200">(555) 014-2200</a><br><a href="mailto:hello@example.com">hello@example.com</a></p>
+      </div>
+      <div>
+        <h3>Hours</h3>
+        <p>Office Mon–Sat 7am–7pm<br>Emergencies 24/7</p>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>© <span data-year></span> Dispatch Home Services · License #HS-000000</p>
+      <p>Theme by <a href="https://presencewave.com">Presencewave</a></p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
