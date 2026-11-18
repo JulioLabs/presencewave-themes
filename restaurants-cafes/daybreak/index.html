@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daybreak | All-day café, breakfast and brunch</title>
+  <meta name="description" content="Daybreak is a sunny café and brunch theme with an open-now hours badge and a menu that filters by vegetarian, vegan and gluten-free.">
+  <link rel="icon" href="assets/mark.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700;9..144,800&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#content">Skip to content</a>
+
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="brand" href="#top"><img src="assets/mark.svg" alt="" width="42" height="42"><span>Daybreak<small>Café &amp; Kitchen</small></span></a>
+      <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false" aria-controls="primary-nav"><span></span><span></span></button>
+      <nav class="primary-nav" id="primary-nav">
+        <a href="#menu">Menu</a>
+        <a href="#specials">Specials</a>
+        <a href="#visit">Hours &amp; visit</a>
+        <a href="#catering">Catering</a>
+        <a class="button button-small" href="#menu">Order pickup</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="content">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <p class="open-badge" data-open-badge><span class="dot" aria-hidden="true"></span><span data-open-text>Checking our hours…</span></p>
+          <h1>Good mornings, <em>all day long.</em></h1>
+          <p class="lead">Slow-scrambled eggs, buttermilk pancakes, big salads and properly good coffee, made from scratch with what the local farms bring us this week.</p>
+          <div class="hero-actions">
+            <a class="button" href="#menu">See the menu</a>
+            <a class="button button-ghost" href="#visit">Find us</a>
+          </div>
+          <ul class="hero-facts">
+            <li><strong>7am</strong><span>doors open daily</span></li>
+            <li><strong>12</strong><span>local farms on the menu</span></li>
+            <li><strong>4.8★</strong><span>from 900+ reviews</span></li>
+          </ul>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <svg viewBox="0 0 420 420">
+            <circle cx="300" cy="110" r="78" fill="var(--sun)"/>
+            <circle cx="300" cy="110" r="104" fill="none" stroke="var(--sun)" stroke-width="6" stroke-dasharray="4 18" stroke-linecap="round"/>
+            <ellipse cx="200" cy="350" rx="170" ry="34" fill="var(--plate-shadow)"/>
+            <ellipse cx="200" cy="330" rx="170" ry="38" fill="var(--white)"/>
+            <ellipse cx="200" cy="326" rx="128" ry="26" fill="var(--plate)"/>
+            <path d="M110 210h170v60c0 40-38 70-85 70s-85-30-85-70z" fill="var(--accent)"/>
+            <path d="M280 228h18a28 28 0 0 1 0 56h-22" fill="none" stroke="var(--accent)" stroke-width="14"/>
+            <ellipse cx="195" cy="212" rx="85" ry="14" fill="var(--coffee)"/>
+            <path d="M160 180c-14-18 14-30 0-50M200 176c-14-18 14-30 0-50M240 180c-14-18 14-30 0-50" fill="none" stroke="var(--steam)" stroke-width="6" stroke-linecap="round"/>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <section id="menu" class="menu">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">The menu</p>
+          <h2>Made here, every morning.</h2>
+          <p>Breakfast is served all day. Tap a filter to see what fits how you eat.</p>
+        </div>
+        <div class="menu-controls">
+          <div class="tab-row" role="tablist" aria-label="Menu sections" data-menu-tabs>
+            <button role="tab" aria-selected="true" data-section="breakfast">Breakfast</button>
+            <button role="tab" aria-selected="false" data-section="lunch">Lunch</button>
+            <button role="tab" aria-selected="false" data-section="drinks">Coffee &amp; drinks</button>
+          </div>
+          <div class="filter-row" aria-label="Dietary filters" data-diet-filters>
+            <label class="chip"><input type="radio" name="diet" value="all" checked><span>Everything</span></label>
+            <label class="chip"><input type="radio" name="diet" value="v"><span>Vegetarian</span></label>
+            <label class="chip"><input type="radio" name="diet" value="vg"><span>Vegan</span></label>
+            <label class="chip"><input type="radio" name="diet" value="gf"><span>Gluten-free</span></label>
+          </div>
+        </div>
+        <ul class="menu-list" data-menu-list aria-live="polite"></ul>
+        <p class="menu-note">V vegetarian · VG vegan · GF gluten-free. Tell us about allergies when you order; our kitchen handles nuts, dairy and wheat.</p>
+      </div>
+    </section>
+
+    <section id="specials" class="specials">
+      <div class="container specials-grid">
+        <article class="special-card">
+          <p class="eyebrow">Weekdays 7–10am</p>
+          <h3>The early bird</h3>
+          <p>Any breakfast plate and a drip coffee for $12. Refills are on us.</p>
+        </article>
+        <article class="special-card special-card-dark">
+          <p class="eyebrow">Thursdays from 6pm</p>
+          <h3>Supper club</h3>
+          <p>Three courses, one long table, $38 a seat. The menu changes every week.</p>
+          <a class="text-link" href="#catering">Save a seat</a>
+        </article>
+        <article class="special-card">
+          <p class="eyebrow">Saturdays &amp; Sundays</p>
+          <h3>Bakery case</h3>
+          <p>Cardamom buns, sourdough and hand pies, out at 8am until they're gone.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="visit" class="visit">
+      <div class="container visit-grid">
+        <div>
+          <p class="eyebrow">Hours &amp; visit</p>
+          <h2>Come as you are. Stay a while.</h2>
+          <p>Walk-ins always welcome. We take reservations for groups of six or more.</p>
+          <table class="hours" data-hours-table>
+            <caption class="visually-hidden">Opening hours</caption>
+            <tbody></tbody>
+          </table>
+        </div>
+        <div class="visit-card">
+          <svg class="visit-map" viewBox="0 0 400 240" aria-hidden="true">
+            <rect width="400" height="240" rx="20" fill="var(--map-bg)"/>
+            <path d="M0 150 C100 130 160 180 260 160 S360 120 400 130" fill="none" stroke="var(--white)" stroke-width="16"/>
+            <path d="M140 0 L170 240" fill="none" stroke="var(--white)" stroke-width="12"/>
+            <circle cx="186" cy="118" r="22" fill="var(--accent)"/>
+            <circle cx="186" cy="118" r="8" fill="var(--white)"/>
+          </svg>
+          <h3>Find us</h3>
+          <p>48 Market Street, Riverside<br>Street parking and a bike rack out front.</p>
+          <p><a class="text-link" href="tel:+15550134400">Call (555) 013-4400</a></p>
+        </div>
+      </div>
+    </section>
+
+    <section id="catering" class="catering">
+      <div class="container catering-inner">
+        <div>
+          <p class="eyebrow">Catering &amp; groups</p>
+          <h2>Breakfast for the office. Brunch for the whole family.</h2>
+          <p>Pastry boxes, coffee to go for 10 or 100, and the whole café for private brunches on Monday evenings.</p>
+        </div>
+        <a class="button button-light" href="mailto:hello@example.com">Ask about catering</a>
+      </div>
+    </section>
+
+    <section class="reviews">
+      <div class="container review-grid">
+        <blockquote><p>"The pancakes are the size of the plate and the coffee is the best on the street. Our Saturday ritual."</p><cite>Jess M.</cite></blockquote>
+        <blockquote><p>"Finally a brunch spot with real vegan options, not just a sad side salad."</p><cite>Ade O.</cite></blockquote>
+        <blockquote><p>"Supper club night felt like dinner at a friend's house. We've booked again."</p><cite>Tom &amp; Rae</cite></blockquote>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="brand" href="#top"><img src="assets/mark.svg" alt="" width="38" height="38"><span>Daybreak<small>Café &amp; Kitchen</small></span></a>
+        <p>Breakfast, lunch and coffee, all day.</p>
+      </div>
+      <div><h3>Visit</h3><p>48 Market Street<br>Riverside</p></div>
+      <div><h3>Say hello</h3><p><a href="tel:+15550134400">(555) 013-4400</a><br><a href="mailto:hello@example.com">hello@example.com</a></p></div>
+      <div><h3>Hours</h3><p>Mon–Fri 7am–3pm<br>Sat–Sun 8am–4pm</p></div>
+    </div>
+    <div class="container footer-bottom">
+      <p>© <span data-year></span> Daybreak Café &amp; Kitchen</p>
+      <p>Theme by <a href="https://presencewave.com">Presencewave</a></p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

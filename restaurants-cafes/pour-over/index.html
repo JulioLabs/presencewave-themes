@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pour Over | Coffee roaster and espresso bar</title>
+  <meta name="description" content="Pour Over is a calm, minimal theme for coffee roasters and espresso bars with this season's coffees and a coffee subscription builder.">
+  <link rel="icon" href="assets/mark.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#content">Skip to content</a>
+
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="brand" href="#top"><img src="assets/mark.svg" alt="" width="36" height="36"><span>Pour Over</span></a>
+      <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false" aria-controls="primary-nav"><span></span><span></span></button>
+      <nav class="primary-nav" id="primary-nav">
+        <a href="#coffees">Coffees</a>
+        <a href="#subscribe">Subscribe</a>
+        <a href="#brew">Brew guides</a>
+        <a href="#bar">The bar</a>
+        <a class="button button-small" href="#subscribe">Start a subscription</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="content">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <p class="eyebrow">Small-batch roaster · Espresso bar</p>
+          <h1>Coffee, <em>slowly.</em></h1>
+          <p class="lead">We roast twice a week in small batches and ship within 48 hours, so it arrives at its best. Or sit with a cup at our bar, by the roaster.</p>
+          <div class="hero-actions">
+            <a class="button" href="#subscribe">Build a subscription</a>
+            <a class="text-link" href="#coffees">This season's coffees</a>
+          </div>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <svg viewBox="0 0 360 420">
+            <path d="M90 40h180l-50 120h-80z" fill="none" stroke="var(--ink)" stroke-width="3"/>
+            <path d="M120 160h120" stroke="var(--ink)" stroke-width="3"/>
+            <path d="M180 170v70" stroke="var(--clay)" stroke-width="4" stroke-dasharray="2 10" stroke-linecap="round"/>
+            <path d="M80 250h200v90a40 40 0 0 1-40 40H120a40 40 0 0 1-40-40z" fill="var(--clay)"/>
+            <path d="M280 270h20a30 30 0 0 1 0 60h-20" fill="none" stroke="var(--clay)" stroke-width="10"/>
+            <ellipse cx="180" cy="250" rx="100" ry="12" fill="var(--ink)"/>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <section id="coffees" class="coffees">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">On the shelf now</p>
+          <h2>This season's coffees</h2>
+        </div>
+        <div class="coffee-grid">
+          <article class="coffee">
+            <p class="origin">Ethiopia · Guji</p>
+            <h3>Hambela Washed</h3>
+            <p class="notes">Jasmine, peach, bergamot</p>
+            <div class="roast" aria-label="Roast level: light"><span style="--level: 25%"></span></div>
+            <p class="coffee-price">$21 <small>/ 250g</small></p>
+          </article>
+          <article class="coffee">
+            <p class="origin">Colombia · Huila</p>
+            <h3>La Esperanza</h3>
+            <p class="notes">Red apple, caramel, cocoa</p>
+            <div class="roast" aria-label="Roast level: medium"><span style="--level: 50%"></span></div>
+            <p class="coffee-price">$19 <small>/ 250g</small></p>
+          </article>
+          <article class="coffee">
+            <p class="origin">Blend · Brazil &amp; Guatemala</p>
+            <h3>House Espresso</h3>
+            <p class="notes">Dark chocolate, hazelnut, brown sugar</p>
+            <div class="roast" aria-label="Roast level: medium-dark"><span style="--level: 70%"></span></div>
+            <p class="coffee-price">$17 <small>/ 250g</small></p>
+          </article>
+          <article class="coffee">
+            <p class="origin">Mexico · Chiapas</p>
+            <h3>Decaf, Mountain Water</h3>
+            <p class="notes">Milk chocolate, almond, orange</p>
+            <div class="roast" aria-label="Roast level: medium"><span style="--level: 55%"></span></div>
+            <p class="coffee-price">$19 <small>/ 250g</small></p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="subscribe" class="subscribe">
+      <div class="container sub-grid">
+        <form class="sub-form" data-sub-form>
+          <p class="eyebrow">Coffee subscription</p>
+          <h2>Fresh coffee, on your schedule.</h2>
+          <fieldset><legend>Coffee</legend><div class="seg" data-group="coffee"></div></fieldset>
+          <fieldset><legend>Bag size</legend><div class="seg" data-group="size"></div></fieldset>
+          <fieldset><legend>Grind</legend><div class="seg" data-group="grind"></div></fieldset>
+          <fieldset><legend>Every</legend><div class="seg" data-group="frequency"></div></fieldset>
+        </form>
+        <aside class="sub-summary" aria-live="polite">
+          <p class="summary-label">Your subscription</p>
+          <p class="summary-main" data-sub-main></p>
+          <p class="summary-price"><strong data-sub-price></strong> per delivery</p>
+          <p class="summary-month" data-sub-month></p>
+          <a class="button button-wide" href="mailto:hello@example.com">Start my subscription</a>
+          <p class="summary-note">Free shipping. Skip, pause or cancel any time.</p>
+        </aside>
+      </div>
+    </section>
+
+    <section id="brew" class="brew">
+      <div class="container">
+        <div class="section-head"><p class="eyebrow">Brew guides</p><h2>Three ways we like it.</h2></div>
+        <div class="brew-grid">
+          <article><h3>Pour over</h3><p class="ratio">15g · 250ml · 3 min</p><p>Medium-fine grind, 94°C water. Bloom 30 seconds, then pour in slow circles.</p></article>
+          <article><h3>French press</h3><p class="ratio">30g · 500ml · 4 min</p><p>Coarse grind. Stir once at a minute, skim the crust at four, press gently.</p></article>
+          <article><h3>Espresso</h3><p class="ratio">18g in · 36g out · 28 s</p><p>Fine grind. If it runs fast and sour, go finer; slow and bitter, go coarser.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="bar" class="bar">
+      <div class="container bar-grid">
+        <div>
+          <p class="eyebrow">The bar</p>
+          <h2>Sit by the roaster.</h2>
+          <p>Espresso, filter of the day, and pastries from the bakery next door. Roasting days are Tuesday and Friday mornings: come and watch.</p>
+        </div>
+        <dl class="bar-hours">
+          <div><dt>Mon–Fri</dt><dd>7am–4pm</dd></div>
+          <div><dt>Sat–Sun</dt><dd>8am–3pm</dd></div>
+          <div><dt>Address</dt><dd>9 Foundry Lane, Mill District</dd></div>
+        </dl>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a class="brand" href="#top"><img src="assets/mark.svg" alt="" width="32" height="32"><span>Pour Over</span></a>
+      <p><a href="mailto:hello@example.com">hello@example.com</a> · <a href="tel:+15550127700">(555) 012-7700</a></p>
+      <p>© <span data-year></span> Pour Over Coffee Roasters · Theme by <a href="https://presencewave.com">Presencewave</a></p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

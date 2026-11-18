@@ -62,6 +62,18 @@ Themes for plumbers, heating and cooling companies, electricians, multi-trade sh
 | Live Wire | Dark landing page for electricians with a project estimator | [home-services-live-wire.zip](https://github.com/JulioLabs/presencewave-themes/releases/latest/download/home-services-live-wire.zip) |
 | Handy Crew | Warm multi-page theme for handyman businesses with a book-a-visit picker | [home-services-handy-crew.zip](https://github.com/JulioLabs/presencewave-themes/releases/latest/download/home-services-handy-crew.zip) |
 
+## Restaurants and cafés
+
+Themes for cafés, brunch spots, family restaurants, food trucks, coffee roasters and tasting-menu restaurants. [Browse the collection](restaurants-cafes/)
+
+| Theme | Style | Download |
+|---|---|---|
+| Daybreak | Sunny landing page for cafés and brunch spots with an open-now badge and a dietary menu filter | [restaurants-cafes-daybreak.zip](https://github.com/JulioLabs/presencewave-themes/releases/latest/download/restaurants-cafes-daybreak.zip) |
+| Trattoria | Warm multi-page theme for family restaurants with a table request picker | [restaurants-cafes-trattoria.zip](https://github.com/JulioLabs/presencewave-themes/releases/latest/download/restaurants-cafes-trattoria.zip) |
+| Night Market | Dark, neon landing page for street food and food trucks with a weekly schedule and a bowl builder | [restaurants-cafes-night-market.zip](https://github.com/JulioLabs/presencewave-themes/releases/latest/download/restaurants-cafes-night-market.zip) |
+| Pour Over | Minimal landing page for coffee roasters with a subscription builder | [restaurants-cafes-pour-over.zip](https://github.com/JulioLabs/presencewave-themes/releases/latest/download/restaurants-cafes-pour-over.zip) |
+| Supper Club | Elegant multi-page theme for tasting-menu restaurants with a private event estimator | [restaurants-cafes-supper-club.zip](https://github.com/JulioLabs/presencewave-themes/releases/latest/download/restaurants-cafes-supper-club.zip) |
+
 ## Download links
 
 Each theme is attached to the [latest release](https://github.com/JulioLabs/presencewave-themes/releases/latest) as `<industry>-<theme>.zip`, for example `lawn-care-fairway.zip`. The cleaning themes also keep their original names (`afterglow.zip` and so on), so older links keep working.

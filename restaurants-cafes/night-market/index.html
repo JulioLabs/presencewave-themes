@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Night Market | Street food and food truck</title>
+  <meta name="description" content="Night Market is a dark, neon street food and food truck theme with a weekly where-to-find-us schedule and a build-your-bowl price calculator.">
+  <link rel="icon" href="assets/mark.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#content">Skip to content</a>
+
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="brand" href="#top"><img src="assets/mark.svg" alt="" width="44" height="44"><span>Night Market</span></a>
+      <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false" aria-controls="primary-nav"><span></span><span></span></button>
+      <nav class="primary-nav" id="primary-nav">
+        <a href="#find">Find the truck</a>
+        <a href="#build">Build a bowl</a>
+        <a href="#menu">Menu</a>
+        <a href="#events">Book us</a>
+        <a class="button button-small" href="#build">Order ahead</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="content">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <p class="today-pill" data-today-pill>Loading today's spot…</p>
+          <h1>Loud flavors.<span>Late nights.</span></h1>
+          <p class="lead">Korean-Mexican street food from a bright pink truck: gochujang tacos, crispy rice bowls and kimchi fries, until the last one's gone.</p>
+          <div class="hero-actions">
+            <a class="button" href="#find">Where are you tonight?</a>
+            <a class="button button-outline" href="#build">Build a bowl</a>
+          </div>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <svg viewBox="0 0 440 320">
+            <rect x="20" y="70" width="330" height="170" rx="22" fill="var(--pink)"/>
+            <rect x="350" y="130" width="70" height="110" rx="16" fill="var(--pink-dark)"/>
+            <rect x="372" y="146" width="36" height="40" rx="6" fill="var(--bg)"/>
+            <rect x="50" y="100" width="240" height="80" rx="10" fill="var(--bg)"/>
+            <path d="M40 100h270" stroke="var(--lime)" stroke-width="8" stroke-dasharray="18 10"/>
+            <text x="170" y="152" text-anchor="middle" font-family="Bungee, sans-serif" font-size="30" fill="var(--lime)">OPEN</text>
+            <circle cx="100" cy="250" r="34" fill="var(--bg)" stroke="var(--cyan)" stroke-width="8"/>
+            <circle cx="320" cy="250" r="34" fill="var(--bg)" stroke="var(--cyan)" stroke-width="8"/>
+            <g fill="var(--lime)"><circle cx="60" cy="40" r="5"/><circle cx="130" cy="28" r="5"/><circle cx="200" cy="40" r="5"/><circle cx="270" cy="28" r="5"/><circle cx="340" cy="40" r="5"/></g>
+            <path d="M20 40 Q95 60 160 30 T300 34 T420 40" fill="none" stroke="var(--line)" stroke-width="2"/>
+          </svg>
+        </div>
+      </div>
+      <div class="marquee" aria-hidden="true"><p>GOCHUJANG TACOS ✦ KIMCHI FRIES ✦ CRISPY RICE BOWLS ✦ YUZU LEMONADE ✦ GOCHUJANG TACOS ✦ KIMCHI FRIES ✦ CRISPY RICE BOWLS ✦ YUZU LEMONADE ✦</p></div>
+    </section>
+
+    <section id="find" class="find">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Find the truck</p>
+          <h2>This week's stops</h2>
+          <p>Same spots every week, so you always know where dinner is. Today is highlighted.</p>
+        </div>
+        <ol class="schedule" data-schedule></ol>
+      </div>
+    </section>
+
+    <section id="build" class="build">
+      <div class="container build-grid">
+        <form class="builder" data-builder>
+          <p class="eyebrow">Build a bowl</p>
+          <h2>Your bowl, your rules.</h2>
+          <fieldset><legend>1. Pick a base</legend><div class="opt-grid" data-group="base"></div></fieldset>
+          <fieldset><legend>2. Pick a protein</legend><div class="opt-grid" data-group="protein"></div></fieldset>
+          <fieldset><legend>3. Toppings <small>(3 included, then $1 each)</small></legend><div class="opt-grid" data-group="toppings"></div></fieldset>
+          <fieldset><legend>4. Sauce</legend><div class="opt-grid" data-group="sauce"></div></fieldset>
+        </form>
+        <aside class="receipt" aria-live="polite">
+          <p class="receipt-title">Your bowl</p>
+          <ul data-receipt></ul>
+          <p class="receipt-total"><span>Total</span><strong data-total>$0</strong></p>
+          <a class="button button-wide" href="#find" data-order>Order at the window</a>
+          <p class="receipt-note">Order ahead with your name and pick it up at the side window, no line.</p>
+        </aside>
+      </div>
+    </section>
+
+    <section id="menu" class="menu">
+      <div class="container">
+        <div class="section-head"><p class="eyebrow">The classics</p><h2>Not into building? Easy.</h2></div>
+        <div class="menu-grid">
+          <article class="dish"><span class="dish-price">$11</span><h3>Gochujang tacos</h3><p>Three tacos, spicy pork or tofu, kimchi slaw, cilantro, lime.</p><p class="dish-tag">Best seller</p></article>
+          <article class="dish"><span class="dish-price">$10</span><h3>Kimchi fries</h3><p>Crispy fries, caramelized kimchi, cheese, gochu mayo, scallions.</p><p class="dish-tag">Share it. Or don't.</p></article>
+          <article class="dish"><span class="dish-price">$9</span><h3>Bulgogi quesadilla</h3><p>Marinated beef, melted Oaxaca cheese, salsa roja for dipping.</p><p class="dish-tag">Late-night pick</p></article>
+          <article class="dish"><span class="dish-price">$5</span><h3>Yuzu lemonade</h3><p>Fresh yuzu and lemon, a little ginger, over crushed ice.</p><p class="dish-tag">Vegan</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="events" class="events">
+      <div class="container events-inner">
+        <div>
+          <p class="eyebrow">Book the truck</p>
+          <h2>Parties, breweries, office lunches.</h2>
+          <p>We bring the truck, the music and enough tacos for 50 to 500. Packages start at $14 a guest with a $900 minimum.</p>
+        </div>
+        <a class="button" href="mailto:hello@example.com">Get a quote</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div><a class="brand" href="#top"><img src="assets/mark.svg" alt="" width="40" height="40"><span>Night Market</span></a><p>Korean-Mexican street food, wherever the night takes us.</p></div>
+      <div><h3>Follow the truck</h3><p>Live location on Instagram<br>@nightmarket.truck</p></div>
+      <div><h3>Book us</h3><p><a href="tel:+15550196600">(555) 019-6600</a><br><a href="mailto:hello@example.com">hello@example.com</a></p></div>
+    </div>
+    <div class="container footer-bottom">
+      <p>© <span data-year></span> Night Market Street Food</p>
+      <p>Theme by <a href="https://presencewave.com">Presencewave</a></p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
