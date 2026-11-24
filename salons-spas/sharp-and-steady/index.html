@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sharp &amp; Steady | Barbershop, walk-ins welcome</title>
+  <meta name="description" content="Sharp &amp; Steady is a bold, vintage barbershop theme with a walk-in board: chairs, today's hours, the current wait and a join-the-list form.">
+  <link rel="icon" href="assets/mark.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#content">Skip to content</a>
+
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="brand" href="#top"><img src="assets/mark.svg" alt="" width="42" height="42"><span>Sharp &amp; Steady<small>Barbers · Est. 2014</small></span></a>
+      <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false" aria-controls="primary-nav"><span></span><span></span></button>
+      <nav class="primary-nav" id="primary-nav">
+        <a href="#walk-ins">Walk-ins</a>
+        <a href="#cuts">Cuts &amp; prices</a>
+        <a href="#barbers">Barbers</a>
+        <a href="#find">Find us</a>
+        <a class="button button-small" href="#walk-ins">Join the list</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="content">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <p class="eyebrow">Walk-ins welcome · Appointments too</p>
+          <h1>Clean cuts.<br><span>No fuss.</span></h1>
+          <p class="lead">Fades, tapers, beard work and hot towel shaves from barbers who take their time. Check the wait below, put your name down, and show up when it's your turn.</p>
+          <div class="hero-actions">
+            <a class="button" href="#walk-ins">See today's wait</a>
+            <a class="button button-ghost" href="#cuts">Cuts &amp; prices</a>
+          </div>
+        </div>
+        <div class="hero-card" aria-hidden="true">
+          <svg viewBox="0 0 360 380">
+            <rect x="130" y="20" width="100" height="300" rx="50" fill="var(--cream)" stroke="var(--ink)" stroke-width="8"/>
+            <clipPath id="pole"><rect x="134" y="24" width="92" height="292" rx="46"/></clipPath>
+            <g clip-path="url(#pole)">
+              <path d="M100 60l160-60M100 120l160-60M100 180l160-60M100 240l160-60M100 300l160-60M100 360l160-60" stroke="var(--red)" stroke-width="26"/>
+              <path d="M100 90l160-60M100 210l160-60M100 330l160-60" stroke="var(--navy)" stroke-width="14"/>
+            </g>
+            <rect x="110" y="0" width="140" height="30" rx="12" fill="var(--ink)"/>
+            <rect x="110" y="310" width="140" height="30" rx="12" fill="var(--ink)"/>
+            <circle cx="180" cy="0" r="18" fill="var(--ink)"/>
+            <rect x="60" y="356" width="240" height="14" rx="7" fill="var(--ink)"/>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <section id="walk-ins" class="walk-ins">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">The walk-in board</p>
+          <h2>Who's cutting, and how long you'll wait.</h2>
+          <p class="board-status" data-status>Checking today's hours…</p>
+        </div>
+        <div class="board-grid">
+          <div class="board">
+            <ul class="chairs" data-chairs></ul>
+            <div class="wait">
+              <p class="wait-label">Estimated wait right now</p>
+              <p class="wait-time" data-wait>—</p>
+              <p class="wait-note"><span data-queue>0</span> on the list ahead of you</p>
+            </div>
+          </div>
+          <form class="join" data-join>
+            <h3>Put your name down</h3>
+            <p>We'll text you when you're next, so you can grab a coffee instead of sitting here.</p>
+            <label>Your first name<input name="name" type="text" autocomplete="given-name" required maxlength="40"></label>
+            <label>Mobile number<input name="phone" type="tel" autocomplete="tel" required maxlength="20" placeholder="(555) 010-2030"></label>
+            <label>What are you getting?
+              <select name="service">
+                <option value="30">Classic cut</option>
+                <option value="45">Skin fade</option>
+                <option value="20">Beard trim</option>
+                <option value="45">Hot towel shave</option>
+                <option value="60">Cut and beard</option>
+              </select>
+            </label>
+            <button class="button" type="submit">Join the list</button>
+            <p class="join-result" data-join-result aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section id="cuts" class="cuts">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Cuts &amp; prices</p>
+          <h2>Straightforward prices. Every cut finished with a hot towel.</h2>
+        </div>
+        <ul class="price-list">
+          <li><span>Classic cut</span><i></i><strong>$32</strong></li>
+          <li><span>Skin fade</span><i></i><strong>$38</strong></li>
+          <li><span>Buzz cut</span><i></i><strong>$22</strong></li>
+          <li><span>Beard trim and line-up</span><i></i><strong>$20</strong></li>
+          <li><span>Hot towel straight-razor shave</span><i></i><strong>$40</strong></li>
+          <li><span>Cut and beard</span><i></i><strong>$50</strong></li>
+          <li><span>Kids' cut (12 and under)</span><i></i><strong>$24</strong></li>
+          <li><span>Seniors (65+), weekdays</span><i></i><strong>$24</strong></li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="barbers" class="barbers">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">The barbers</p>
+          <h2>Four chairs. Forty years of cutting between us.</h2>
+        </div>
+        <div class="barber-grid">
+          <article class="barber"><div class="badge">01</div><h3>Ray</h3><p>Owner. Classic cuts, scissor work, and the best hot towel shave in the county.</p></article>
+          <article class="barber"><div class="badge">02</div><h3>Dante</h3><p>Fades and tapers, sharp line-ups, designs on request.</p></article>
+          <article class="barber"><div class="badge">03</div><h3>Mia</h3><p>Textured crops, longer men's styles and beard shaping.</p></article>
+          <article class="barber"><div class="badge">04</div><h3>Luis</h3><p>Kids' cuts with patience, and quick, clean buzz cuts.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="find" class="find">
+      <div class="container find-grid">
+        <div>
+          <p class="eyebrow">Find us</p>
+          <h2>Corner of 5th and Main.</h2>
+          <p>Parking out back. Coffee's on the house while you wait.</p>
+          <p><a class="text-link" href="tel:+15550145500">Call (555) 014-5500</a></p>
+        </div>
+        <table class="hours">
+          <caption class="visually-hidden">Opening hours</caption>
+          <tbody data-hours></tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="brand" href="#top"><img src="assets/mark.svg" alt="" width="38" height="38"><span>Sharp &amp; Steady<small>Barbers · Est. 2014</small></span></a>
+        <p>Clean cuts, no fuss.</p>
+      </div>
+      <div><h3>Visit</h3><p>501 Main Street<br>Riverside</p></div>
+      <div><h3>Call</h3><p><a href="tel:+15550145500">(555) 014-5500</a></p></div>
+      <div><h3>Gift cards</h3><p>At the counter, any amount.</p></div>
+    </div>
+    <div class="container footer-bottom">
+      <p>© <span data-year></span> Sharp &amp; Steady Barbers</p>
+      <p>Theme by <a href="https://presencewave.com">Presencewave</a></p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

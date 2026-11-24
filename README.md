@@ -74,6 +74,18 @@ Themes for cafés, brunch spots, family restaurants, food trucks, coffee roaster
 | Pour Over | Minimal landing page for coffee roasters with a subscription builder | [restaurants-cafes-pour-over.zip](https://github.com/JulioLabs/presencewave-themes/releases/latest/download/restaurants-cafes-pour-over.zip) |
 | Supper Club | Elegant multi-page theme for tasting-menu restaurants with a private event estimator | [restaurants-cafes-supper-club.zip](https://github.com/JulioLabs/presencewave-themes/releases/latest/download/restaurants-cafes-supper-club.zip) |
 
+## Salons, barbers and spas
+
+Themes for hair salons, barbershops, day spas, nail, lash and brow studios, and luxury color specialists. [Browse the collection](salons-spas/)
+
+| Theme | Style | Download |
+|---|---|---|
+| Golden Hour | Warm landing page for hair salons with prices by stylist level | [salons-spas-golden-hour.zip](https://github.com/JulioLabs/presencewave-themes/releases/latest/download/salons-spas-golden-hour.zip) |
+| Sharp & Steady | Bold, vintage landing page for barbershops with a walk-in board and wait time | [salons-spas-sharp-and-steady.zip](https://github.com/JulioLabs/presencewave-themes/releases/latest/download/salons-spas-sharp-and-steady.zip) |
+| Still Water | Calm multi-page theme for day spas with a spa day builder | [salons-spas-still-water.zip](https://github.com/JulioLabs/presencewave-themes/releases/latest/download/salons-spas-still-water.zip) |
+| Bloom Bar | Playful landing page for nail, lash and brow studios with a three-step booking request | [salons-spas-bloom-bar.zip](https://github.com/JulioLabs/presencewave-themes/releases/latest/download/salons-spas-bloom-bar.zip) |
+| Maison | Dark, editorial multi-page theme for luxury salons with a color consultation estimate | [salons-spas-maison.zip](https://github.com/JulioLabs/presencewave-themes/releases/latest/download/salons-spas-maison.zip) |
+
 ## Download links
 
 Each theme is attached to the [latest release](https://github.com/JulioLabs/presencewave-themes/releases/latest) as `<industry>-<theme>.zip`, for example `lawn-care-fairway.zip`. The cleaning themes also keep their original names (`afterglow.zip` and so on), so older links keep working.

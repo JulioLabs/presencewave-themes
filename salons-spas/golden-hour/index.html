@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Golden Hour | Hair salon, color and styling</title>
+  <meta name="description" content="Golden Hour is a warm, modern salon theme with a service menu that switches every price and time between New Talent, Senior and Master stylists.">
+  <link rel="icon" href="assets/mark.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#content">Skip to content</a>
+
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="brand" href="#top"><img src="assets/mark.svg" alt="" width="42" height="42"><span>Golden Hour<small>Hair Studio</small></span></a>
+      <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false" aria-controls="primary-nav"><span></span><span></span></button>
+      <nav class="primary-nav" id="primary-nav">
+        <a href="#services">Services</a>
+        <a href="#team">Stylists</a>
+        <a href="#visit">Visit</a>
+        <a href="#events">Weddings &amp; events</a>
+        <a class="button button-small" href="#book">Book now</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="content">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <p class="eyebrow">Cuts · Color · Styling · Barbering</p>
+          <h1>Your hair, <em>in its best light.</em></h1>
+          <p class="lead">A warm, unhurried salon for cuts, lived-in color and blowouts that last. Every appointment starts with a real conversation about your hair.</p>
+          <div class="hero-actions">
+            <a class="button" href="#book">Book an appointment</a>
+            <a class="button button-ghost" href="#services">See prices</a>
+          </div>
+          <ul class="hero-facts">
+            <li><strong>4.9★</strong><span>from 600+ reviews</span></li>
+            <li><strong>12</strong><span>stylists and barbers</span></li>
+            <li><strong>Free</strong><span>color consultations</span></li>
+          </ul>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <svg viewBox="0 0 420 440">
+            <circle cx="210" cy="200" r="170" fill="var(--blush)"/>
+            <circle cx="210" cy="200" r="132" fill="none" stroke="var(--gold)" stroke-width="3" stroke-dasharray="2 14" stroke-linecap="round"/>
+            <path d="M128 330c0-70 30-150 82-150s82 80 82 150" fill="var(--hazel)"/>
+            <circle cx="210" cy="160" r="56" fill="var(--skin)"/>
+            <path d="M150 168c-4-62 28-96 66-96 46 0 70 36 64 94-12-30-38-44-64-44-28 0-52 14-66 46z" fill="var(--hazel-dark)"/>
+            <path d="M156 160c-18 60-12 120 6 170M262 160c18 60 12 120-6 170" fill="none" stroke="var(--hazel-dark)" stroke-width="18" stroke-linecap="round"/>
+            <path d="M300 110l14 6-14 6-6 14-6-14-14-6 14-6 6-14z" fill="var(--gold)"/>
+            <path d="M110 250l9 4-9 4-4 9-4-9-9-4 9-4 4-9z" fill="var(--gold)"/>
+            <rect x="60" y="370" width="300" height="12" rx="6" fill="var(--hazel)"/>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="services">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Services &amp; prices</p>
+          <h2>Pick your stylist level. See your price.</h2>
+          <p>Every stylist trains with us for a year before taking clients. Choose a level to see what each service costs and how long it takes.</p>
+        </div>
+        <div class="level-switch" role="radiogroup" aria-label="Stylist level" data-levels>
+          <label class="level"><input type="radio" name="level" value="newtalent"><span><strong>New Talent</strong><small>In their first two years</small></span></label>
+          <label class="level"><input type="radio" name="level" value="senior" checked><span><strong>Senior</strong><small>3 to 7 years</small></span></label>
+          <label class="level"><input type="radio" name="level" value="master"><span><strong>Master</strong><small>8+ years, educators</small></span></label>
+        </div>
+        <div class="service-groups" data-services aria-live="polite"></div>
+        <p class="service-note">Prices are a starting point; longer or thicker hair can take more time and product. We'll confirm the price before we start.</p>
+      </div>
+    </section>
+
+    <section id="team" class="team">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Meet the team</p>
+          <h2>Twelve chairs, one way of working.</h2>
+        </div>
+        <div class="team-grid">
+          <article class="stylist"><div class="avatar" aria-hidden="true">MR</div><h3>Maya R.</h3><p class="role">Master stylist · color educator</p><p>Lived-in blondes, copper and the art of a soft grow-out.</p></article>
+          <article class="stylist"><div class="avatar avatar-2" aria-hidden="true">JT</div><h3>Jordan T.</h3><p class="role">Senior barber</p><p>Skin fades, beard shaping and classic scissor cuts.</p></article>
+          <article class="stylist"><div class="avatar avatar-3" aria-hidden="true">AK</div><h3>Aisha K.</h3><p class="role">Senior stylist</p><p>Curls and coils, silk presses and big, healthy volume.</p></article>
+          <article class="stylist"><div class="avatar avatar-4" aria-hidden="true">LS</div><h3>Lena S.</h3><p class="role">New Talent stylist</p><p>Precise bobs and blowouts, at a friendlier price.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="book" class="book">
+      <div class="container book-inner">
+        <div>
+          <p class="eyebrow">Book</p>
+          <h2>Your chair is waiting.</h2>
+          <p>Book online any time, or call us and we'll find a stylist who fits your hair and your schedule. New to color with us? Start with a free 15-minute consultation.</p>
+        </div>
+        <div class="book-actions">
+          <a class="button button-light" href="tel:+15550188200">Call (555) 018-8200</a>
+          <a class="text-link text-link-light" href="mailto:hello@example.com">Email the front desk</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="visit" class="visit">
+      <div class="container visit-grid">
+        <div>
+          <p class="eyebrow">Visit</p>
+          <h2>Come in, slow down.</h2>
+          <p>Free parking behind the building. Tea, coffee and good music while you wait.</p>
+          <table class="hours">
+            <caption class="visually-hidden">Opening hours</caption>
+            <tbody>
+              <tr><td>Monday</td><td>Closed</td></tr>
+              <tr><td>Tuesday – Thursday</td><td>9am – 8pm</td></tr>
+              <tr><td>Friday</td><td>9am – 6pm</td></tr>
+              <tr><td>Saturday</td><td>8am – 5pm</td></tr>
+              <tr><td>Sunday</td><td>10am – 4pm</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="visit-card">
+          <h3>Find us</h3>
+          <p>210 Main Street, Suite 2<br>Riverside</p>
+          <p><a class="text-link" href="tel:+15550188200">(555) 018-8200</a></p>
+          <h3>Our promise</h3>
+          <p>Not in love with your color? Come back within 7 days and we'll adjust it, free.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="events" class="events">
+      <div class="container events-inner">
+        <div>
+          <p class="eyebrow">Weddings &amp; events</p>
+          <h2>Hair for the whole party.</h2>
+          <p>Bridal trials, styling for up to ten people on the day, and an early start in our studio or at your venue.</p>
+        </div>
+        <a class="button" href="mailto:hello@example.com">Plan your day</a>
+      </div>
+    </section>
+
+    <section class="reviews">
+      <div class="container review-grid">
+        <blockquote><p>"Maya finally got my blonde right: soft, warm and it grows out beautifully."</p><cite>Hannah P.</cite></blockquote>
+        <blockquote><p>"Best fade in town, and Jordan actually listens."</p><cite>Marcus D.</cite></blockquote>
+        <blockquote><p>"They understand curls. I've never left a salon this happy."</p><cite>Tasha W.</cite></blockquote>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="brand" href="#top"><img src="assets/mark.svg" alt="" width="38" height="38"><span>Golden Hour<small>Hair Studio</small></span></a>
+        <p>Cuts, color and styling in a warm, unhurried room.</p>
+      </div>
+      <div><h3>Visit</h3><p>210 Main Street, Suite 2<br>Riverside</p></div>
+      <div><h3>Say hello</h3><p><a href="tel:+15550188200">(555) 018-8200</a><br><a href="mailto:hello@example.com">hello@example.com</a></p></div>
+      <div><h3>Hours</h3><p>Tue–Thu 9am–8pm<br>Fri 9am–6pm · Sat 8am–5pm<br>Sun 10am–4pm</p></div>
+    </div>
+    <div class="container footer-bottom">
+      <p>© <span data-year></span> Golden Hour Hair Studio</p>
+      <p>Theme by <a href="https://presencewave.com">Presencewave</a></p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

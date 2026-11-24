@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bloom Bar | Nails, lashes and brows</title>
+  <meta name="description" content="Bloom Bar is a bright, playful theme for nail, lash and brow studios with a three-step booking request: service, artist, day and time.">
+  <link rel="icon" href="assets/mark.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#content">Skip to content</a>
+
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="brand" href="#top"><img src="assets/mark.svg" alt="" width="42" height="42"><span>Bloom Bar</span></a>
+      <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false" aria-controls="primary-nav"><span></span><span></span></button>
+      <nav class="primary-nav" id="primary-nav">
+        <a href="#menu">Menu</a>
+        <a href="#artists">Artists</a>
+        <a href="#parties">Parties</a>
+        <a href="#visit">Visit</a>
+        <a class="button button-small" href="#book">Book</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="content">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <p class="sticker">New: gel extensions in 45 colors</p>
+          <h1>Little luxuries, <span>big mood.</span></h1>
+          <p class="lead">Gel manicures that last three weeks, lash lifts that save your mornings and brows shaped for your face. Book in under a minute.</p>
+          <div class="hero-actions">
+            <a class="button" href="#book">Book your spot</a>
+            <a class="button button-ghost" href="#menu">See the menu</a>
+          </div>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <svg viewBox="0 0 420 400">
+            <circle cx="210" cy="200" r="168" fill="var(--lilac)"/>
+            <circle cx="326" cy="86" r="40" fill="var(--butter)"/>
+            <circle cx="86" cy="318" r="30" fill="var(--mint)"/>
+            <rect x="182" y="60" width="56" height="110" rx="14" fill="var(--ink)"/>
+            <rect x="172" y="160" width="76" height="26" rx="8" fill="var(--ink)"/>
+            <rect x="130" y="180" width="160" height="170" rx="44" fill="var(--pink)"/>
+            <rect x="150" y="200" width="22" height="110" rx="11" fill="var(--white)" opacity=".45"/>
+            <path d="M180 270c20 18 40 18 60 0" fill="none" stroke="var(--white)" stroke-width="7" stroke-linecap="round"/>
+            <path d="M188 250v-10M210 248v-12M232 250v-10" stroke="var(--white)" stroke-width="6" stroke-linecap="round"/>
+            <path d="M334 220l10 4-10 4-4 10-4-10-10-4 10-4 4-10z" fill="var(--white)"/>
+            <path d="M84 140l8 3-8 3-3 8-3-8-8-3 8-3 3-8z" fill="var(--white)"/>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <section id="book" class="book">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Book in three taps</p>
+          <h2>What are we doing today?</h2>
+        </div>
+        <div class="booker" data-booker>
+          <ol class="steps" aria-label="Booking steps">
+            <li data-step-label="1" class="is-current">Service</li>
+            <li data-step-label="2">Artist</li>
+            <li data-step-label="3">Day &amp; time</li>
+          </ol>
+
+          <div class="step" data-step="1">
+            <div class="choice-grid" data-services></div>
+          </div>
+          <div class="step" data-step="2" hidden>
+            <div class="choice-grid" data-artists></div>
+            <button class="back" type="button" data-back>← Change service</button>
+          </div>
+          <div class="step" data-step="3" hidden>
+            <p class="step-title">Pick a day</p>
+            <div class="day-row" data-days></div>
+            <p class="step-title">And a time</p>
+            <div class="time-row" data-times></div>
+            <form class="confirm" data-confirm>
+              <p class="summary" data-summary></p>
+              <div class="field-row">
+                <label>First name<input name="name" type="text" autocomplete="given-name" required maxlength="40"></label>
+                <label>Mobile<input name="phone" type="tel" autocomplete="tel" required maxlength="20"></label>
+              </div>
+              <button class="button" type="submit">Request my appointment</button>
+              <p class="result" data-result aria-live="polite"></p>
+            </form>
+            <button class="back" type="button" data-back>← Change artist</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="menu" class="menu">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">The menu</p>
+          <h2>Nails, lashes, brows.</h2>
+        </div>
+        <div class="menu-grid">
+          <article class="menu-card card-pink"><h3>Nails</h3><ul><li><span>Classic manicure</span><b>$30</b></li><li><span>Gel manicure</span><b>$45</b></li><li><span>Gel extensions</span><b>$70</b></li><li><span>Spa pedicure</span><b>$55</b></li><li><span>Nail art, per nail</span><b>$5+</b></li></ul></article>
+          <article class="menu-card card-lilac"><h3>Lashes</h3><ul><li><span>Lash lift and tint</span><b>$75</b></li><li><span>Classic full set</span><b>$140</b></li><li><span>Hybrid full set</span><b>$165</b></li><li><span>Fill (2–3 weeks)</span><b>$65</b></li></ul></article>
+          <article class="menu-card card-mint"><h3>Brows</h3><ul><li><span>Brow shape</span><b>$28</b></li><li><span>Brow lamination</span><b>$70</b></li><li><span>Tint</span><b>$20</b></li><li><span>Lamination and tint</span><b>$85</b></li></ul></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="artists" class="artists">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">The artists</p>
+          <h2>Tiny details are our whole thing.</h2>
+        </div>
+        <div class="artist-grid">
+          <article><div class="dot dot-pink" aria-hidden="true">✿</div><h3>Kim</h3><p>Nail art and gel extensions. Ask her about chrome.</p></article>
+          <article><div class="dot dot-lilac" aria-hidden="true">✦</div><h3>Priya</h3><p>Lash extensions and lifts with a light, natural touch.</p></article>
+          <article><div class="dot dot-mint" aria-hidden="true">❀</div><h3>Sofia</h3><p>Brows of every kind: lamination, shaping and tint.</p></article>
+          <article><div class="dot dot-butter" aria-hidden="true">✧</div><h3>Jade</h3><p>Manicures, pedicures and the best hand massage.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="parties" class="parties">
+      <div class="container parties-inner">
+        <div>
+          <p class="eyebrow">Parties</p>
+          <h2>Bring the group.</h2>
+          <p>Bridal showers, birthdays and the night before prom: up to eight guests, bubbly or mocktails, and the studio to yourselves.</p>
+        </div>
+        <a class="button button-light" href="mailto:hello@example.com">Plan a party</a>
+      </div>
+    </section>
+
+    <section id="visit" class="visit">
+      <div class="container visit-grid">
+        <div><h3>Find us</h3><p>77 Elm Street<br>Riverside</p></div>
+        <div><h3>Hours</h3><p>Tue–Fri 10am–8pm<br>Sat 9am–6pm · Sun 11am–5pm</p></div>
+        <div><h3>Say hi</h3><p><a href="tel:+15550193300">(555) 019-3300</a><br><a href="mailto:hello@example.com">hello@example.com</a></p></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-bottom">
+      <p>© <span data-year></span> Bloom Bar Nail &amp; Lash Studio</p>
+      <p>Theme by <a href="https://presencewave.com">Presencewave</a></p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
