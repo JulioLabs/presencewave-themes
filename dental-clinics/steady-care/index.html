@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Steady Care | Family medicine and walk-in clinic</title>
+  <meta name="description" content="Steady Care is a calm family medicine and walk-in clinic theme that shows if the clinic is open now, the estimated walk-in wait and a same-day visit request.">
+  <link rel="icon" href="assets/mark.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,500;8..60,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#content">Skip to content</a>
+
+  <div class="status-bar" data-status-bar><div class="container"><span class="status-dot" aria-hidden="true"></span><span data-status-text>Checking today's hours…</span></div></div>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html"><img src="assets/mark.svg" alt="" width="40" height="40"><span>Steady Care<small>Family Medicine &amp; Walk-in</small></span></a>
+      <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false" aria-controls="primary-nav"><span></span><span></span></button>
+      <nav class="primary-nav" id="primary-nav">
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="services.html">Services</a>
+        <a href="providers.html">Providers</a>
+        <a href="visit.html">Visit</a>
+        <a class="button button-small" href="visit.html#same-day">Same-day visit</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="content">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <p class="eyebrow">Family medicine · Walk-in care</p>
+          <h1>Care that's there when you need it.</h1>
+          <p class="lead">A family doctor who knows you, and a walk-in clinic for the days that can't wait. Same building, same team, same records.</p>
+          <div class="hero-actions">
+            <a class="button" href="visit.html#same-day">Request a same-day visit</a>
+            <a class="button button-ghost" href="services.html">Our services</a>
+          </div>
+        </div>
+        <aside class="wait-card" aria-live="polite">
+          <p class="wait-label">Walk-in clinic</p>
+          <p class="wait-status" data-open-status>Checking…</p>
+          <div class="wait-time"><span>Estimated wait</span><strong data-wait>–</strong></div>
+          <p class="wait-note" data-wait-note>Wait times are estimates and change through the day.</p>
+          <a class="text-link" href="visit.html">Today's hours and directions</a>
+        </aside>
+      </div>
+    </section>
+
+    <section class="ways">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Three ways to be seen</p>
+          <h2>Pick what fits your day.</h2>
+        </div>
+        <div class="ways-grid">
+          <article class="way"><h3>Walk in</h3><p>Colds, sprains, cuts and fevers. No appointment needed while we're open.</p><a class="text-link" href="visit.html">See the wait</a></article>
+          <article class="way"><h3>Same-day visit</h3><p>Request a time slot today and skip most of the waiting room.</p><a class="text-link" href="visit.html#same-day">Request a time</a></article>
+          <article class="way"><h3>Family doctor</h3><p>Checkups, long-term conditions and prevention with one provider who knows you.</p><a class="text-link" href="providers.html">Meet our providers</a></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="trust">
+      <div class="container trust-grid">
+        <div><strong>Most insurance</strong><span>plans accepted, plus fair self-pay prices</span></div>
+        <div><strong>Lab and X-ray</strong><span>on site, results in the patient portal</span></div>
+        <div><strong>7 days</strong><span>a week, early mornings and evenings</span></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="brand" href="index.html"><img src="assets/mark.svg" alt="" width="36" height="36"><span>Steady Care<small>Family Medicine &amp; Walk-in</small></span></a>
+        <p>Everyday care for every age, with walk-ins welcome.</p>
+      </div>
+      <div><h3>Clinic</h3><p>300 Harbor Street<br>Riverside</p></div>
+      <div><h3>Contact</h3><p><a href="tel:+15550128800">(555) 012-8800</a><br><a href="mailto:hello@example.com">hello@example.com</a></p></div>
+      <div><h3>Emergency?</h3><p>For chest pain, trouble breathing or a serious injury, call 911.</p></div>
+    </div>
+    <div class="container footer-bottom">
+      <p>© <span data-year></span> Steady Care Family Medicine</p>
+      <p>Theme by <a href="https://presencewave.com">Presencewave</a></p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

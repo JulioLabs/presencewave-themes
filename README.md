@@ -86,6 +86,18 @@ Themes for hair salons, barbershops, day spas, nail, lash and brow studios, and 
 | Bloom Bar | Playful landing page for nail, lash and brow studios with a three-step booking request | [salons-spas-bloom-bar.zip](https://github.com/JulioLabs/presencewave-themes/releases/latest/download/salons-spas-bloom-bar.zip) |
 | Maison | Dark, editorial multi-page theme for luxury salons with a color consultation estimate | [salons-spas-maison.zip](https://github.com/JulioLabs/presencewave-themes/releases/latest/download/salons-spas-maison.zip) |
 
+## Dental and medical clinics
+
+Themes for family, cosmetic and pediatric dentists, family medicine and walk-in clinics, and physical therapy clinics. [Browse the collection](dental-clinics/)
+
+| Theme | Style | Download |
+|---|---|---|
+| Fresh Mint | Bright landing page for family dentists with an insurance check and new-patient request | [dental-clinics-fresh-mint.zip](https://github.com/JulioLabs/presencewave-themes/releases/latest/download/dental-clinics-fresh-mint.zip) |
+| Clear Smile | Polished multi-page theme for cosmetic dentists with a smile cost estimator | [dental-clinics-clear-smile.zip](https://github.com/JulioLabs/presencewave-themes/releases/latest/download/dental-clinics-clear-smile.zip) |
+| Little Molars | Playful landing page for pediatric dentists with a first-visit guide by age | [dental-clinics-little-molars.zip](https://github.com/JulioLabs/presencewave-themes/releases/latest/download/dental-clinics-little-molars.zip) |
+| Steady Care | Calm multi-page theme for family medicine and walk-in clinics with an open-now status and walk-in wait | [dental-clinics-steady-care.zip](https://github.com/JulioLabs/presencewave-themes/releases/latest/download/dental-clinics-steady-care.zip) |
+| Motion Lab | Energetic landing page for physical therapy clinics with a "where does it hurt?" picker | [dental-clinics-motion-lab.zip](https://github.com/JulioLabs/presencewave-themes/releases/latest/download/dental-clinics-motion-lab.zip) |
+
 ## Download links
 
 Each theme is attached to the [latest release](https://github.com/JulioLabs/presencewave-themes/releases/latest) as `<industry>-<theme>.zip`, for example `lawn-care-fairway.zip`. The cleaning themes also keep their original names (`afterglow.zip` and so on), so older links keep working.
