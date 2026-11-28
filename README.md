@@ -98,6 +98,18 @@ Themes for family, cosmetic and pediatric dentists, family medicine and walk-in 
 | Steady Care | Calm multi-page theme for family medicine and walk-in clinics with an open-now status and walk-in wait | [dental-clinics-steady-care.zip](https://github.com/JulioLabs/presencewave-themes/releases/latest/download/dental-clinics-steady-care.zip) |
 | Motion Lab | Energetic landing page for physical therapy clinics with a "where does it hurt?" picker | [dental-clinics-motion-lab.zip](https://github.com/JulioLabs/presencewave-themes/releases/latest/download/dental-clinics-motion-lab.zip) |
 
+## Real estate agents
+
+Themes for neighborhood agents, luxury and condo brokerages, open house agents, relocation specialists and first-time buyer specialists. [Browse the collection](real-estate/)
+
+| Theme | Style | Download |
+|---|---|---|
+| Front Porch | Warm landing page for neighborhood agents with a home value estimate and market analysis request | [real-estate-front-porch.zip](https://github.com/JulioLabs/presencewave-themes/releases/latest/download/real-estate-front-porch.zip) |
+| Skyline | Sleek, dark multi-page theme for luxury and condo brokerages with a listing search | [real-estate-skyline.zip](https://github.com/JulioLabs/presencewave-themes/releases/latest/download/real-estate-skyline.zip) |
+| Open Door | Bold landing page with this weekend's open houses, RSVPs and add-to-calendar | [real-estate-open-door.zip](https://github.com/JulioLabs/presencewave-themes/releases/latest/download/real-estate-open-door.zip) |
+| Common Ground | Editorial multi-page theme for relocation agents with a neighborhood compare | [real-estate-common-ground.zip](https://github.com/JulioLabs/presencewave-themes/releases/latest/download/real-estate-common-ground.zip) |
+| Keystone | Steady landing page for first-time buyer specialists with a mortgage payment calculator | [real-estate-keystone.zip](https://github.com/JulioLabs/presencewave-themes/releases/latest/download/real-estate-keystone.zip) |
+
 ## Download links
 
 Each theme is attached to the [latest release](https://github.com/JulioLabs/presencewave-themes/releases/latest) as `<industry>-<theme>.zip`, for example `lawn-care-fairway.zip`. The cleaning themes also keep their original names (`afterglow.zip` and so on), so older links keep working.

@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Common Ground | Relocation and neighborhood guide</title>
+  <meta name="description" content="Common Ground is an editorial multi-page theme for relocation agents, with a neighborhood compare and moving guides.">
+  <link rel="icon" href="assets/mark.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,500;6..72,600&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#content">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html"><img src="assets/mark.svg" alt="" width="40" height="40"><span>Common Ground<small>Relocation &amp; Real Estate</small></span></a>
+      <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false" aria-controls="primary-nav"><span></span><span></span></button>
+      <nav class="primary-nav" id="primary-nav">
+        <a href="neighborhoods.html">Neighborhoods</a>
+        <a href="guides.html">Moving guides</a>
+        <a href="contact.html">Contact</a>
+        <a class="button button-small" href="contact.html">Plan my move</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="content">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <p class="eyebrow">Moving to Riverside?</p>
+          <h1>Find the neighborhood before you find the house.</h1>
+          <p class="lead">We help people moving from out of town choose where to live, then find the home. Video tours, honest guides and a local who answers every question.</p>
+          <div class="hero-actions">
+            <a class="button" href="#compare">Compare neighborhoods</a>
+            <a class="text-link" href="guides.html">Read the moving guides</a>
+          </div>
+        </div>
+        <div class="hero-map" aria-hidden="true">
+          <svg viewBox="0 0 440 440">
+            <rect width="440" height="440" rx="28" fill="var(--paper-2)"/>
+            <path d="M0 300c80-30 140 20 220-10s140-70 220-40" fill="none" stroke="var(--river)" stroke-width="22" stroke-linecap="round"/>
+            <path d="M60 0v440M180 0v440M300 0v440M0 90h440M0 200h440M0 380h440" stroke="var(--line)" stroke-width="6"/>
+            <circle cx="120" cy="140" r="54" fill="var(--sage)" opacity="0.55"/>
+            <circle cx="320" cy="120" r="44" fill="var(--sage)" opacity="0.55"/>
+            <circle cx="250" cy="370" r="40" fill="var(--sage)" opacity="0.55"/>
+            <g fill="var(--forest)"><path d="M120 120a16 16 0 0 1 16 16c0 12-16 28-16 28s-16-16-16-28a16 16 0 0 1 16-16z"/><path d="M320 98a14 14 0 0 1 14 14c0 10-14 24-14 24s-14-14-14-24a14 14 0 0 1 14-14z"/><path d="M250 350a13 13 0 0 1 13 13c0 10-13 22-13 22s-13-12-13-22a13 13 0 0 1 13-13z"/></g>
+            <circle cx="220" cy="230" r="12" fill="var(--rust)"/><circle cx="220" cy="230" r="24" fill="none" stroke="var(--rust)" stroke-width="4"/>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <section class="compare" id="compare">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Neighborhood compare</p>
+          <h2>Put two neighborhoods side by side.</h2>
+          <p>Prices, the drive downtown, how walkable the streets are and the green space nearby. The things that decide where a move feels right.</p>
+        </div>
+        <form class="compare-pick" data-compare-form>
+          <label>First neighborhood<select name="a" data-hood-select></select></label>
+          <span class="vs" aria-hidden="true">vs</span>
+          <label>Second neighborhood<select name="b" data-hood-select></select></label>
+        </form>
+        <div class="compare-table" data-compare aria-live="polite"></div>
+        <p class="fine-print">Medians from the last 12 months of sales; commute at 8am on a weekday. Figures are a guide, not a guarantee.</p>
+      </div>
+    </section>
+
+    <section class="steps-section">
+      <div class="container">
+        <div class="section-head"><p class="eyebrow">How a move works with us</p><h2>From first call to first night.</h2></div>
+        <ol class="move-steps">
+          <li><strong>A 30-minute call</strong><span>Your budget, commute, must-haves and what you love about where you live now.</span></li>
+          <li><strong>A neighborhood shortlist</strong><span>Three or four places to look, with a written guide to each.</span></li>
+          <li><strong>Tours, in person or on video</strong><span>We walk the streets and the homes with you, live from your phone if you can't fly in.</span></li>
+          <li><strong>Offer, inspection, keys</strong><span>Every step handled locally, with a closing you can sign from anywhere.</span></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="guides-teaser">
+      <div class="container">
+        <div class="section-head split-head"><div><p class="eyebrow">Moving guides</p><h2>Read before you visit.</h2></div><a class="text-link" href="guides.html">All guides</a></div>
+        <div class="guide-grid">
+          <article class="guide"><p class="kicker">Getting started</p><h3>Your first weekend in Riverside: a two-day plan</h3><p>Where to stay, which streets to walk and what to eat between viewings.</p></article>
+          <article class="guide"><p class="kicker">Money</p><h3>What a home really costs here, beyond the price</h3><p>Property taxes, insurance and utilities, neighborhood by neighborhood.</p></article>
+          <article class="guide"><p class="kicker">Buying from afar</p><h3>How to buy a home you've only seen on video</h3><p>The questions to ask, the inspections to order and the clauses that protect you.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="quote-band">
+      <div class="container"><blockquote><p>"We moved from Seattle without ever setting foot in the house. The neighborhood guide was so honest we already felt at home."</p><cite>Hannah &amp; Ravi, moved in 2025</cite></blockquote></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="brand" href="index.html"><img src="assets/mark.svg" alt="" width="36" height="36"><span>Common Ground<small>Relocation &amp; Real Estate</small></span></a>
+        <p>Helping people find their place in a new city.</p>
+      </div>
+      <div><h3>Explore</h3><p><a href="neighborhoods.html">Neighborhoods</a><br><a href="guides.html">Moving guides</a></p></div>
+      <div><h3>Office</h3><p>15 Commerce Street<br>Riverside</p></div>
+      <div><h3>Talk to us</h3><p><a href="tel:+15550194400">(555) 019-4400</a><br><a href="mailto:hello@example.com">hello@example.com</a></p></div>
+    </div>
+    <div class="container footer-bottom">
+      <p>© <span data-year></span> Common Ground Realty · Licensed real estate brokerage · <span class="eho">Equal Housing Opportunity</span></p>
+      <p>Theme by <a href="https://presencewave.com">Presencewave</a></p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

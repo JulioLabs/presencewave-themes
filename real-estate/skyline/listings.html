@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Listings | Skyline Residences</title>
+  <meta name="description" content="Search Skyline's residences by type, price and bedrooms.">
+  <link rel="icon" href="assets/mark.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#content">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html"><img src="assets/mark.svg" alt="" width="36" height="36"><span>Skyline<small>Residences</small></span></a>
+      <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false" aria-controls="primary-nav"><span></span><span></span></button>
+      <nav class="primary-nav" id="primary-nav">
+        <a href="listings.html" aria-current="page">Listings</a>
+        <a href="neighborhoods.html">Neighborhoods</a>
+        <a href="contact.html">Contact</a>
+        <a class="button button-small" href="contact.html">Book a showing</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="content">
+    <section class="page-hero">
+      <div class="container">
+        <p class="eyebrow">Listings</p>
+        <h1>Find your residence.</h1>
+      </div>
+    </section>
+
+    <section class="search">
+      <div class="container">
+        <form class="filters" data-filters>
+          <label><span>Type</span>
+            <select name="type">
+              <option value="">Any</option>
+              <option value="condo">Condo</option>
+              <option value="townhome">Townhome</option>
+              <option value="house">House</option>
+            </select>
+          </label>
+          <label><span>Max price</span>
+            <select name="max">
+              <option value="">No limit</option>
+              <option value="1000000">$1M</option>
+              <option value="2000000">$2M</option>
+              <option value="3500000">$3.5M</option>
+            </select>
+          </label>
+          <label><span>Bedrooms</span>
+            <select name="beds">
+              <option value="0">Any</option>
+              <option value="1">1+</option>
+              <option value="2">2+</option>
+              <option value="3">3+</option>
+            </select>
+          </label>
+          <label><span>Sort</span>
+            <select name="sort">
+              <option value="new">Newest</option>
+              <option value="low">Price, low to high</option>
+              <option value="high">Price, high to low</option>
+            </select>
+          </label>
+        </form>
+        <p class="result-count" data-count aria-live="polite"></p>
+        <div class="listing-grid" data-listings></div>
+        <p class="empty" data-empty hidden>No residences match. Try a higher price or fewer bedrooms, or <a href="contact.html">tell us what you're looking for</a>: many of our sales never reach the market.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div><a class="brand" href="index.html"><img src="assets/mark.svg" alt="" width="32" height="32"><span>Skyline<small>Residences</small></span></a></div>
+      <div><h3>Office</h3><p>1 Harbor Plaza, 22nd floor<br>Riverside</p></div>
+      <div><h3>Contact</h3><p><a href="tel:+15550182400">(555) 018-2400</a><br><a href="mailto:hello@example.com">hello@example.com</a></p></div>
+    </div>
+    <div class="container footer-bottom">
+      <p>© <span data-year></span> Skyline Residences · Licensed real estate brokerage · <span class="eho">Equal Housing Opportunity</span></p>
+      <p>Theme by <a href="https://presencewave.com">Presencewave</a></p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
